@@ -12,6 +12,8 @@ These are the trailers on soundcloud and youtube. They are my first video and so
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_-QcC_td3lM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+All those song files at MIDI level are published to my [github repo](https://github.com/atsushieno/mugene/tree/master/samples/mugene-fantasy-suite).
+
 ## So WTH did you become a composer?
 
 It is surprising maybe to those who know me somewhat well. When I attended to ADC2018, I talked to some random people and then I shot question around, like "do you compose music?" And the answers were _mostly_ "yes".
@@ -36,6 +38,28 @@ In any case, I began with "playing with sounds" i.e. listen to sound and familia
 
 At that stage, I only knew General MIDI programs, but it was actually more than what Collective has. I was like "why does it not come with piccolo...", and I often fell back to [juicysfplugin](https://github.com/Birch-san/juicysfplugin) + FluidR3_GM.sf3. I seemed a dead-end to me after all...
 
-At that time, I was going to learn [JUCE](https://github.com/WeAreROLI/JUCE/) and [tracktion_engine](https://github.com/Tracktion/tracktion_engine/issues), but I found it nearly impossible because JUCE on Linux is quite featureless (no VST3, no Lv2, poor UI implementation etc.). Therefore I ended up to set up a new Mac environment. So I decided to 1) basically compose songs using MML on my daily Linux desktop, and 2) bring MIDI songs to Waveform and continue on Mac with Kontakt etc. After all, it was a quite successful decision.
+At that time, I planned to play with [JUCE](https://github.com/WeAreROLI/JUCE/) and [tracktion_engine](https://github.com/Tracktion/tracktion_engine/issues), but I found it nearly impossible because JUCE on Linux is quite featureless (no VST3, no Lv2, poor UI implementation etc.). Therefore I ended up to set up a new Mac environment. So I decided to 1) basically compose songs using MML on my daily Linux desktop, and 2) bring MIDI songs to Waveform and continue on Mac with Kontakt etc. After all, it was a quite successful decision. It was already past new year days.
 
 
+## Using MML for daily composition
+
+I haven't really explained what MML is. Music Macro Language is a text program-like syntax that is used to describe songs by operations, which are compiled to some song files. It was popular in 20th century, and then modern DAWs took place in DTM world. There was no dominant song data format, so as no dominant MML syntax - just like programming languages, there were various syntaxes. It was because, the output can be either FM/PSG chip (mostly ones from YAMAHA), MIDI, or even BEEP sound. My compiler is to generate Standard MIDI file.
+
+The examples below are typical MML operations:
+
+- `c`, `d`, `e`, `f`, `g`, `a`, `b` : they are "notes" in sol-fa (do, re, mi...).
+- `r` : rest
+- `o4` : set octave to 4
+- `>` : shift octave (either up or down, depending on the syntax definition)
+- `V100` : set channel volume to 100.
+- `l8` : set "default length" to 8 (eighth note)
+- `[` ... `]4` : repeat from `[` to `]`, 4 times.
+
+There is usually a lot more operations (I defined like 250+ in my compiler syntax) and it's up to the output module (FM sound drivers and MIDI are totally different beast).
+
+Using this classic technology has its own advantage - it works very well with flexible text editor operations, version controls like git, and often features like [Language Server Protocol](https://langserver.org/). But apparently it's not for everyone - its learning curve is quite steep...
+
+In any case, when I decided to use my own MML compiler (to both ease composition as well as dogfooding), I had a handful of tools to make it possible:
+
+- [mugene](https://github.com/atsushieno/mugene) MML compiler: the compiler toolchain. I actually (ab)use it in my various projects e.g. [fluidsynth-midi-service](https://github.com/atsushieno/fluidsynth-midi-service) to ensure that it is also usable to play arbitrary MIDI songs.
+  - It comes with LSP (which somehow does not seem to be working right now...) that implements basic operations like "go to definition".
