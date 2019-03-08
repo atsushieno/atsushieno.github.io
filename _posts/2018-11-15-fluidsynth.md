@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Updates since the last effort
 
