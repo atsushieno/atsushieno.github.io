@@ -45,7 +45,9 @@ At that time, I planned to play with [JUCE](https://github.com/WeAreROLI/JUCE/) 
 
 I haven't really explained what MML is. Music Macro Language is a text program-like syntax that is used to describe songs by operations, which are compiled to some song files. It was popular in 20th century, and then modern DAWs took place in DTM world. There was no dominant song data format, so as no dominant MML syntax - just like programming languages, there were various syntaxes. It was because, the output can be either FM/PSG chip (mostly ones from YAMAHA), MIDI, or even BEEP sound. My compiler is to generate Standard MIDI file.
 
-The examples below are typical MML operations:
+There are always certain people who prefer "traditional styles" - for example, Yuzo Koshiro, a famous VGM composer, had released [their FM synthesizer driver](https://github.com/onitama/mucom88) (which is for virtual synthesizer as well as for physical FM chip) on github, in November, 2018. And then there were some people who released songs based on the driver. That's what happened since 2018....
+
+Anyhow I should tell you what it is like. The examples below are typical MML operations:
 
 - `c`, `d`, `e`, `f`, `g`, `a`, `b` : they are "notes" in sol-fa (do, re, mi...).
 - `r` : rest
@@ -57,9 +59,25 @@ The examples below are typical MML operations:
 
 There is usually a lot more operations (I defined like 250+ in my compiler syntax) and it's up to the output module (FM sound drivers and MIDI are totally different beast).
 
+I quote some MML from my actual song:
+
+```
+// Trombone -----------------
+_ 1	CH1 @57 V100 o4 l16 GATE_DENOM8 Q7 RSD60 CSD40 DSD40 BEND_CENT_MODE24 P74
+A	r2.g4>c4g4  d2.e-4f4b-4  a2.g8agf4.c8  f1
+	  K-5c4d4
+	e-2.c4g4e-4 f2.f4b-4g4> c1^8r8<br>cr d1.
+```
+
 Using this classic technology has its own advantage - it works very well with flexible text editor operations, version controls like git, and often features like [Language Server Protocol](https://langserver.org/). But apparently it's not for everyone - its learning curve is quite steep...
 
 In any case, when I decided to use my own MML compiler (to both ease composition as well as dogfooding), I had a handful of tools to make it possible:
 
 - [mugene](https://github.com/atsushieno/mugene) MML compiler: the compiler toolchain. I actually (ab)use it in my various projects e.g. [fluidsynth-midi-service](https://github.com/atsushieno/fluidsynth-midi-service) to ensure that it is also usable to play arbitrary MIDI songs.
   - It comes with LSP (which somehow does not seem to be working right now...) that implements basic operations like "go to definition".
+  - The syntax is poorly explained... I wrote [a book about the MML syntax](https://github.com/atsushieno/mugene-guide-book) but it is in Japanese...
+- [xmdsp](https://github.com/atsushieno/xmdsp), a visual SMF player, to check various MIDI states as well as showing 16 keyboards stack. It also helps checking compiled songs as the file is modified/updated.
+- [xmmk](https://github.com/atsushieno/xmmk), a virtual MIDI keyboard that you can play with PC keyboard. It had evolved a lot during my composition months, have piano mode as well as chromatic mode (no black keys), record whatever you played into MML, compile MML and modify MIDI state on the fly, select whatever MIDI module you use to give detailed bank select info, etc. etc...
+- [managed-midi](https://github.com/atsushieno/managed-midi) everything above is based on this MIDI API foundation.
+
+These were the basic toolset I used (and of course, text editors like [Geany](https://www.geany.org/) or VSCode) and git(hub). I ended up to have more than 100 commits for my song repository (apart from the compiler repo where I put the final release version of the songs). It feels more like daily development(!)
