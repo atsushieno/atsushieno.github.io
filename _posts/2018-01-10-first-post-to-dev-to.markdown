@@ -5,8 +5,7 @@ published: true
 layout: post
 title: "First post to dev.to"
 published: true
-description: 
-categories: 
+
 ---
 
 # First post to dev.to
