@@ -1,5 +1,6 @@
 ---
 published: true
+title: 'Fluidsynth hack continued: Oboe driver'
 ---
 ## Updates since the last effort
 
