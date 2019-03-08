@@ -1,0 +1,158 @@
+---
+published: true
+title: Fluidsynth 2.0.x for Android
+description: null
+tags: 'android, midi, audio, fluidsynth'
+---
+## TL;DR
+
+- My fluidsynth Android port is live again, caught up with the latest Fluidsynth development (2.0.x).
+- There is Java version of fluidsynth based on JNA.
+- There is native asset loader now.
+
+
+## Recap from the last post
+
+Back in March, I [wrote a post](https://dev.to/atsushieno/fluidsynth-for-android--269i) on my Fluidsynth port to Android. Since then I spent some time or have been doing busy on other stuff (such as the latest [TechBookFest5](https://sangorrin.blogspot.com/2018/10/techbookfest-5.html) as the management team). But now that I'm not employed and have a lot more flexible time, I could resume my Fluidsynth port as well as many other music related software I had been working on. Anyhow...
+
+To recap the latest state, I had [an Android port of fluidsynth](https://github.com/atsushieno/fluidsynth), using [a fork of Cerbero](https://github.com/atsushieno/cerbero/tree/add-fluidsynth), organized by my own module called [android-fluidsynth](https://github.com/atsushieno/android-fluidsynth/). The build is complicated so that almost no one could use my outcome, and the original Fluidsynth had [moved to github](https://github.com/Fluidsynth/fluidsynth) with evolving changes e.g. migration to CMake build system. The CMake build system on Cerbero didn't work nicely for Android.
+
+## Resurrection and restructuring
+
+To make things worse, my android-fluidsynth build got broken when Google updated Android NDK to whichever version I don't even remember - I had to manage Android NDK support in my Cerbero fork tree, and it's been somewhat annoying. And NDK had various changes that make updates messy - aarch64 support, switch to unified headers (that means, file lookup paths change), and the default toolchains switch to Clang (and gcc getting obsoleted).
+
+So, I began with refactoring the entire build dependencies. This was what I had in the beginning:
+
+```
+atsushieno/fluidsynth-midi-service
+  atsushieno/android-fluidsynth (submodule)
+    atsushieno/cerbero (submodule)
+      atsushieno/fluidsynth (git checkout)
+```
+
+My cerbero changes were for 1) NDK lookup changes, and 2) additional fluidsynth build recipe. I decided to remove fluidsynth build from there. That means, cerbero still builds glib (still required as a dependency) but I could just use the outcome and reference it from another CMake-based fluidsynth build (which is the current build system).
+
+(I could even package those native binaries for glib, but now it is just to checkout and run cerbero build, which is maintained by their own team, which is simple enough for me.)
+
+To align with that, I ended up to create another fluidsynth fork which is based on the latest original tree (Fluidsynth/fluidsynth on github) and ported my opensles additions (which needed some additional changes, but that's not important here).
+
+Along with this way, I could significantly reduced my dependency tree:
+
+```
+atsushieno/fluidsynth-midi-service
+  atsyshieno/fluidsynth-fork (new, submodule)
+    GStreamer/cerbero (on-the-fly checkout at build time. Not on github)
+```
+
+... and build it again(!)
+
+Once I could submit a PR to the original Fluidsynth repo and got accepted, then the dependencies will look even simpler, but let's think about it later.
+
+
+## Kotlin based application
+
+In the earlier days, I had been using Xamarin.Android as the primary app development framework for this fluidsynth port. However after I quit the development team, it became impossible to keep using the IDE on Linux. I still continue the development, but it became quite tough without IDE.
+
+After many thoughts I ended up to start [porting part of my C# app to Kotlin](https://github.com/atsushieno/fluidsynth-midi-service-j), using [JNA](https://github.com/java-native-access/jna) for my [NFluidsynth](https://github.com/atsushieno/nfluidsynth) replacement. The actual API binding is almost automatically generated using [JNAerator](https://github.com/nativelibs4java/JNAerator). Since I didn't want to mess with JNI, it was a big help to me. (I was a [BridJ](https://github.com/nativelibs4java/BridJ) contributor in the past, but now JNA looks easier to depend on.)
+
+The ported app is far from a feature parity port, but at least it is enough to dogfood the fluidsynth Android port. In the end there will be fully functional MidiDeviceService implementation.
+
+
+## Custom SoundFont loader for Android Assets
+
+One of the big API changes in Fluidsynth 2.0 was a completely rewritten custom SoundFont loader. In Fluidsynth 1.x we had to completely implement SF loader that does not only provide custom stream processor but also had to build the entire SoundFont structure, which makes it almost impossible to customize. Fluidsynth 2.0 offers a new way to provide a set of custom "stream callbacks" (for open/read/seek/tell/close) that lets us implement our own stream loader.
+
+My previous port had some changes to provide custom stream loader which had exactly the same purpose, so I could totally remove those changes. Instead, now I (kind of) have to provide custom SF loader functionality for Android Assets that aligns with the new way.
+
+There are two options:
+
+- implement custom callbacks in native (as in NDK manner) API.
+- implement callbacks in the wrapper languages (C# for Xamarin.Android, Java for ordinal Android developers).
+
+What makes the former (native API approeach) annoying is that the NDK Assets API requires `JNIEnv` and `jobject` to acquire `AAssetManager`. It was especially annoying for my new Kotlin-based app. I ended up to add `Java_fluidsynth_androidextensions_NativeHandler_setAssetManagerContext()` function in the Android port. (It is nasty especially because any Java code that tries to use this API needs to have `NativeHelper` class in `fluidsynth.androidextensions` package, that I offer in my Kotlin app. I even renamed my Kotlin app package from `name.atsushieno.fluidsynth` to `fluidsynth` to make it less nasty...)
+
+The second approach (to write callbacks in wrapper languages) looks viable, but it needs some special care about GlobalRefs for the Java objects that provide those callback functionality - whenever GC moves your method references, the Asset SF loader crashes! I haven't resolved that issue with my JNAerated API yet (C# version works as I made it "pinned" with `GCHandle`). Native interop is a wild where you're killed without sufficient crash information or chance to debug...
+
+
+## Building a debuggable libfluidsynth.so
+
+Even after I got a "successful" `libfluidsynth.so` builds, it never worked successfully. The longstanting problem was [an unexpected SIGILL](https://github.com/atsushieno/fluidsynth-midi-service-j/issues/2). This issue was even registered at luckier state than at first, as it has a debuggable binary(!)
+
+There had been wide variety of chances that `libfluidsynth.so` was built without debug symbols. For example, you have to...
+
+- explicitly specify debugging options such as `-Denable-debug=on` and give additional `-fsanitize=undefined` and `-fsanitize-trap=undefined` flags at CMake,
+- make sure to pass `-g` or those `-fsanitize=undefined` etc. to gcc execution (for standalone toolchain uses), or
+- specify `NDK_DEBUG` and make sure to kill `cmd-strip` for `ndk-build`
+
+After those struggles, I could finally get lldb working with my `libfluidsynth.so`. It was a long journey.
+
+I ended up to write a lengthy article about these kind of tricks for [our indie tech book](https://techbooster.booth.pm/items/1046485) for that TechBookFest5 (in Japanese) from this experience...
+
+
+## Fighting against SIGILL
+
+The SIGILL issue I mentioned at the top of the previous section actually took a while... the debugger did not give much information about "why" (while it gives "where" which is still informative). The relevant function is:
+
+```
+static int chunkid(unsigned int id)
+{
+    unsigned int i;
+    const unsigned int *p;
+
+    p = (const unsigned int *)&idlist;
+
+    for(i = 0; i < sizeof(idlist) / sizeof(int); i++, p += 1)
+    {
+        if(*p == id)
+        {
+            return (i + 1);
+        }
+    }
+
+    return UNKN_ID;
+}
+```
+
+It was weird especially because [the problematic code](https://github.com/FluidSynth/fluidsynth/blob/da6a2e7a91820bf97f89d3bcdb15b76e94e90bc2/src/sfloader/fluid_sffile.c#L494) was working fine in the past.
+
+Actually, it was problematic. This is what clang reports:
+
+```
+/sources/fluidsynth-midi-service-j/external/fluidsynth/src/sfloader/fluid_sffile.c:494:9: warning: 
+      cast from 'const char (*)[117]' to 'const unsigned int *' increases
+      required alignment from 1 to 4 [-Wcast-align]
+    p = (const unsigned int *)&idlist;
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+```
+
+If you google the part of the message "increases required alignment from " then you'll find that it could indeed result in undefined behavior such as SIGILL.
+
+[An unsophisticated workaround](https://github.com/atsushieno/fluidsynth-fork/commit/0239d37) fixed the issue.
+
+It is possible that the latest NDK changes from gcc to clang or possible compiler option changes in Fluidsynth build (in CMakeLists.txt) triggered the breakage, but I have no precise idea.
+
+
+## Fixing audio glitches
+
+Even at the previous working state with old Fluidsynth port, the audio playback was "glitchy". There was always noise inbetween, which was like it had some blank between synthesized samples.
+
+There was also annoying warnings that OpenSLES spewed onto device logs saying that there was insufficient playback buffer, meaning that there were too much synthesized buffers to enque, before consuming them. It looked like I was enqueuing too much.
+
+Before going forward, I should explain a bit about the buffering internals. There are two approaches to enqueue synthesized audio buffers:
+
+- Run an isolated audio loop. Get synthesized buffers and enqueue them while it's alive.
+- Register OpenSLES callback. Get synthesized buffers and enqueue them within the callback.
+
+In the earlier codebase, I had a hacky workaround to "adjust" the latency to calculate exact buffering time, which often adjusts timing with synchronous usleep() calls. It still made sense when it's running an isolated audio run thread (the former model), but only if the buffering was at "earlier than the expected schedule". And it didn't make sense to try to adjust latency along with OpenSLES callback.
+
+And to make investigation complicated, it took a while for me to find that the buffering option switching by settings API didn't work as expected (due to bogus default value retrieval in my own code). I was also confused by two different "callbacks", one for OpenSLES and the other for Fluidsynth. After all, precise understanding of code and code cleanup to reduce confusion led me to [the right solution](https://github.com/FluidSynth/fluidsynth/commit/9a4c265)...
+
+After fixing this, all those buffering related issues are gone and the port became really usable. [It still needs some settings](https://github.com/atsushieno/fluidsynth-midi-service-j/blob/dac3149/app/src/main/java/name/atsushieno/fluidsynthmidideviceservicej/FluidsynthMidiReceiver.kt#L29) to get working in good state, but I'm quite happy with the outcome.
+
+
+## Next step
+
+Android audio situation keeps moving forward. Google had introduced new [AAudio API](https://developer.android.com/ndk/guides/audio/aaudio/aaudio) since Android O (API Level 26) which brings chance for lower latency by handful of means (direct buffers, high priority audio callback, low latency mode specification in the API). Google first stated that AAudio will be backported to earlier Androids, but what realized instead was a new audio API called [Oboe](https://github.com/google/oboe) that provides an unified API which switches two backend implementations (AAudio and OpenSLES).
+
+Oboe was at preview state when I wrote the previous post (or, it didn't even exist when I started porting) but now that Oboe is officially stable, it makes more sense to support it instead of OpenSLES. It is even fair to say that supporting OpenSLES became totally redundant... therefore, the next step is to support Oboe.
