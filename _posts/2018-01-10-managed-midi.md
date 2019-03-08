@@ -1,12 +1,7 @@
 ---
-published: false
----
----
-title: "managed-midi: the truly cross platform .NET MIDI API"
 published: true
-description: 
-tags: 
 ---
+# managed-midi: the truly cross platform .NET MIDI API
 
 I have a (surprisingly) long term project called ["managed-midi"](https://github.com/atsushieno/managed-midi) which is to offer cross platform C#/.NET MIDI access API. My "cross platform" here is not a marketing term; it targets Linux (ALSA), macOS (CoreMIDI) and Windows (WinMM), along with Android, iOS and UWP.
 
