@@ -81,3 +81,9 @@ In any case, when I decided to use my own MML compiler (to both ease composition
 - [managed-midi](https://github.com/atsushieno/managed-midi) everything above is based on this MIDI API foundation.
 
 These were the basic toolset I used (and of course, text editors like [Geany](https://www.geany.org/) or VSCode) and git(hub). I ended up to have more than 100 commits for my song repository (apart from the compiler repo where I put the final release version of the songs). It feels more like daily development(!)
+
+## Setting objectives and task management
+
+I have set up a private github repository to save production (songwriting has been done in my other repository) and related logistics in both commits and issues.
+
+
