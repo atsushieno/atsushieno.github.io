@@ -1,6 +1,6 @@
 ---
-published: true
 title: 'managed-midi: the truly cross platform .NET MIDI API'
+date: 2018-01-10 00:00:00 Z
 layout: post
 ---
 

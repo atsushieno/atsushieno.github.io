@@ -1,9 +1,9 @@
 ---
-layout: page
 title: About
-permalink: /about/
-published: true
+permalink: "/about/"
+layout: page
 ---
+
 It is primarily to host Atsushi Eno's personal blogs.
 
 Japanese:

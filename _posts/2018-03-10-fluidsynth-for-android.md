@@ -1,8 +1,12 @@
 ---
-published: true
 title: Fluidsynth for Android
-description: null
-tags: 'android, audio, midi, xamarin'
+date: 2018-03-10 00:00:00 Z
+tags:
+- android,
+- audio,
+- midi,
+- xamarin
+description: 
 ---
 
 ## Motivation

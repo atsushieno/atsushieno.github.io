@@ -1,8 +1,11 @@
 ---
-published: true
 title: managed-midi updates
-description: null
-tags: MIDI mono xamarin
+date: 2018-05-31 00:00:00 Z
+tags:
+- MIDI
+- mono
+- xamarin
+description: 
 ---
 
 Back in January, I wrote an introduction [blog post](https://dev.to/atsushieno/managed-midi-the-truly-cross-platform-net-midi-api-56hk) about [managed-midi](https://github.com/atsushieno/managed-midi). It's been 4 months since then, and there are couple of updates, so it's nice to sum them up.
