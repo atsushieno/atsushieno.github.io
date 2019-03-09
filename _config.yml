@@ -9,7 +9,7 @@
 title: music to your ears
 email: atsushieno (guess domains)
 description: > # this means to ignore newlines until "baseurl:"
-  Blog posts, mostly about software engineering and music tech, by Atsushi Eno.
+  Blog posts, mostly about software engineering and music tech, by Atsushi Eno. Comments to me are welcomed as [github issues](https://github.com/atsushieno/atsushieno.github.io/issues).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: atsushi_eno
