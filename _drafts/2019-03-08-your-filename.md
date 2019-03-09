@@ -14,6 +14,8 @@ These are the trailers on soundcloud and youtube. They are my first video and so
 
 All those song files at MIDI level are published to my [github repo](https://github.com/atsushieno/mugene/tree/master/samples/mugene-fantasy-suite).
 
+
+
 ## So WTH did you become a composer?
 
 It is surprising maybe to those who know me somewhat well. When I attended to ADC2018, I talked to some random people and then I shot question around, like "do you compose music?" And the answers were _mostly_ "yes".
@@ -93,11 +95,18 @@ I have set up a private github repository to save production (songwriting has be
 
 ![recorded github issue example]({{site.baseurl}}/_drafts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc(1).png)
 
-Namely, these were the tasks to do:
+The first thing I had to do was to determine final production: a downloadable data contents are the easiest option, but even for that I have to prepare for that. Music CDs are better but needs cover jacket image and printing.
 
-- determine final production: a downloadable data contents are the easiest option, but even for that I have to prepare for that. Music CDs are better but needs cover jacket image and printing.
+Since I decided my basic direction that I use my MML compiler and Tracktion, the outcomes are almost determined as:
 
-Then I broke down the tasks:
+1. MP3
+2. CD, unless I fail to manage it
+3. source MML files and MIDI files
+4. source Tracktion edit data
+
+The latter items are especially unique. Those composers typically use DAWs too, but they usually don't provide their source data. It would be mostly because 1) they are shy, 2) they don't want to expose their technique, and 3) it makes less sense to publish sources that depend on commercial audio plugins such as Kontakt. But I am from completely different world - open source. And one of my goals is to promote my MML compiler and tools. It makes more sense to publish them.
+
+Anyhow, after determining the final outcome, I broke down them into the individual tasks:
 
 - ask painter friend to draw a picture for the CD jacket
 - compose the songs(!)
@@ -129,4 +138,7 @@ Preparing CD was kind of fun experience. I felt like I were a factory.
 ![copied CDs with printed labels]({{site.baseurl}}/_drafts/IMG_20190227_110702.jpg)
 
 ![final CD package]({{site.baseurl}}/_drafts/IMG_20190226_144608.jpg)
+
+
+## X-day, and aftermath
 
