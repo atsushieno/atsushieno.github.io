@@ -82,8 +82,51 @@ In any case, when I decided to use my own MML compiler (to both ease composition
 
 These were the basic toolset I used (and of course, text editors like [Geany](https://www.geany.org/) or VSCode) and git(hub). I ended up to have more than 100 commits for my song repository (apart from the compiler repo where I put the final release version of the songs). It feels more like daily development(!)
 
+At the same time, certain amount of time was spent on improving those tools. It is exactly dogfooding. Those tools are still not very friendly to anyone other than myself, but I am quite happy to have shown the possibility that this songwriting approach actually worked.
+
+
 ## Setting objectives and task management
 
 I have set up a private github repository to save production (songwriting has been done in my other repository) and related logistics in both commits and issues.
 
+![recorded github issues]({{site.baseurl}}/_drafts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc.png)
+
+![recorded github issue example]({{site.baseurl}}/_drafts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc(1).png)
+
+Namely, these were the tasks to do:
+
+- determine final production: a downloadable data contents are the easiest option, but even for that I have to prepare for that. Music CDs are better but needs cover jacket image and printing.
+
+Then I broke down the tasks:
+
+- ask painter friend to draw a picture for the CD jacket
+- compose the songs(!)
+  - at MIDI level
+  - at DAW level
+- mastering
+- create a crossfade demo video / audio for youtube and soundcloud
+- Downloadable contents and "download cards"
+  - finalize the zip archive
+  - design download cards (namecards) and order at printing company.
+  - set up downloadable personalized URLs (that can individually disabled in case URLs are leaked)
+  - print QR codes for them onto label paper and attach them to the printed cards.
+- CD
+  - buy blank CD media and burn them. This time I prepared only < 30 copies.
+  - design CD jacket as a paper package, and order printable paper and cover plastic bags. This time it was at [a local online shop](https://cd.mks-jpn.com/) that comes with half-crafted paper.
+  - print all of them. There was a big problem at this level - I had to consume 5 ink bottles just to print 30-ish copies of them(!)
+  - all the remaining crafting works.
+  - get inner-CD bags. I bought them at local music CD store called Disc Union.
+  - buy printable CD labels, design and print them, then paste all onto the copied CDs.
+- writing a book about HOW-TOs: I gave up writing one in the end, apparently there was not enough time. I am writing this post now instead.
+- register CDDB information and MP3 song fingerprints at [MusicBrainz](https://musicbrainz.org/).
+
+Preparing CD was kind of fun experience. I felt like I were a factory.
+
+![download cards (ordered as namecards)]({{site.baseurl}}/_drafts/IMG_20190224_105200.jpg)
+
+![printed jacket paper at home]({{site.baseurl}}/_drafts/IMG_20190226_142146.jpg)
+
+![copied CDs with printed labels]({{site.baseurl}}/_drafts/IMG_20190227_110702.jpg)
+
+![final CD package]({{site.baseurl}}/_drafts/IMG_20190226_144608.jpg)
 
