@@ -1,0 +1,155 @@
+---
+published: false
+title: Instant music CD release experience for an indie music festival
+---
+I had been quiet after attending to Audio Developer Conference (in English). I had been enjoying Europe after 10+ years of absence there. Then I changed something in life... I had been busy to become a songwriter. It's going to be somewhat long story.
+
+## I'm not interested in long tale, just show me the outcome
+
+These are the trailers on soundcloud and youtube. They are my first video and song uploads...!
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/579425697&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_-QcC_td3lM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+All those song files at MIDI level are published to my [github repo](https://github.com/atsushieno/mugene/tree/master/samples/mugene-fantasy-suite).
+
+And the downloadable version is available [at an online shop "Booth"](https://xamaritans.booth.pm/items/1250711).
+
+## So WTH did you become a composer?
+
+It is surprising maybe to those who know me somewhat well. When I attended to ADC2018, I talked to some random people and then I shot question around, like "do you compose music?" And the answers were _mostly_ "yes".
+
+I felt incompetent. They were mostly songwriters and they were mostly developers at the same time. I wasn't. I have been developing MML (music macro language) compiler which is all about songwriting in text, but I didn't produce music with it... at least, a lot. I did some, but it was like in 199x and then I only "ported" some old compositions to my own language. That was kind of dogfooding, but I should have done more of those. I wasn't indeed much confident with my own principles "I can compose songs with my own toolchains".
+
+I thought that I should begin something. The first thing I tried was to attend to something like [M3](http://www.m3net.jp/), one of the biggest indie music festival which inherits in-house Comic-Market-like culture, with 10,000 visitors and 1000-ish exhibitors. I had some experience with that kind of "festival", so I thought it would be good for me. It was in late November and the next M3 was too far away. I wanted to begin with "easier" one for entry level composer.
+
+That's how I found ["幻想音楽祭"](http://gensouongaku.info/fes/) - it was a festival specific to "Fantasy" kind of music. It comes with "you define what 'fantasy' means" statement. It practically meant something like soundtracks (like "the Lord of the Rings"), VGMs (Final Fantasy series), even storytelling (in Japangrish we call them "voice drama CDs"), can be literally anything...
+
+That was kind of familiar to me. I applied for it with little-to-no thoughts. After a few weeks, the organizers stated that they expanded the space and all the applicants were accepted. There were about 90 exhibitor groups in the end, including mine.
+
+I was under pressure. I hadn't really compose anything for like 15+ years. And now I have to compose something only by myself. I used to write some songs with a MIDI device (Roland SC-8820) when I was a student, but that was ages ago. In later life I often tried to learn modern DAWs like FL Studio, as well as Komplete, and tried to learn them using Windows, but I didn't make it with Windows after all. I thought I could dump and run away... (then the organizers will mark me as "should be dropped for future festivals")
+
+Fortunately I had certain amount of time. I could spend all my time for learning how to compose songs using modern software, as well as composition basics. It was post-ADC time and I had a lot of interest in the new technology, but I decided to concentrate on songwriting. To dive into this kind of software industry, I have to learn those technologies anyways.
+
+## Determining basic directions
+
+At that state, everything was left in blank. I could take any approach to produce a "music disc" (that was what I wrote in my application submission: "I will come up with a music disc, sources for them, and how-to book about it)"... I had my MML compiler, but I was not really confident enough that it's usable for "practical" use for daily songwriting. I played with [Tracktion Waveform](https://www.tracktion.com/products/waveform) a bit (because it was one of those emerging DAWs that support Linux desktop) but not much.
+
+In any case, I began with "playing with sounds" i.e. listen to sound and familiarize myself, either with my old MIDI toy SC-8820, or VST plugins like Collective on Waveform. It was like, I ended a day just with only four bars with one simple string chord as outcome. Then I started playing with Waveform more, by importing various MIDI song files that I used to create (they were mostly copy of some metal bands like Dream Theater, or similar Japanese prog-rock bands), altering MIDI program changes to VSTi to get familiarized with modern sound.
+
+At that stage, I only knew General MIDI programs, but it was actually more than what Collective has. I was like "why does it not come with piccolo...", and I often fell back to [juicysfplugin](https://github.com/Birch-san/juicysfplugin) + FluidR3_GM.sf3. I seemed a dead-end to me after all...
+
+At that time, I planned to play with [JUCE](https://github.com/WeAreROLI/JUCE/) and [tracktion_engine](https://github.com/Tracktion/tracktion_engine/issues), but I found it nearly impossible because JUCE on Linux is quite featureless (no VST3, no Lv2, poor UI implementation etc.). Therefore I ended up to set up a new Mac environment. So I decided to 1) basically compose songs using MML on my daily Linux desktop, and 2) bring MIDI songs to Waveform and continue on Mac with Kontakt etc. After all, it was a quite successful decision. It was already past new year days.
+
+
+## Using MML for daily composition
+
+I haven't really explained what MML is. Music Macro Language is a text program-like syntax that is used to describe songs by operations, which are compiled to some song files. It was popular in 20th century, and then modern DAWs took place in DTM world. There was no dominant song data format, so as no dominant MML syntax - just like programming languages, there were various syntaxes. It was because, the output can be either FM/PSG chip (mostly ones from YAMAHA), MIDI, or even BEEP sound. My compiler is to generate Standard MIDI file.
+
+There are always certain people who prefer "traditional styles" - for example, Yuzo Koshiro, a famous VGM composer, had released [their FM synthesizer driver](https://github.com/onitama/mucom88) (which is for virtual synthesizer as well as for physical FM chip) on github, in November, 2018. And then there were some people who released songs based on the driver. That's what happened since 2018....
+
+Anyhow I should tell you what it is like. The examples below are typical MML operations:
+
+- `c`, `d`, `e`, `f`, `g`, `a`, `b` : they are "notes" in sol-fa (do, re, mi...).
+- `r` : rest
+- `o4` : set octave to 4
+- `>` : shift octave (either up or down, depending on the syntax definition)
+- `V100` : set channel volume to 100.
+- `l8` : set "default length" to 8 (eighth note)
+- `[` ... `]4` : repeat from `[` to `]`, 4 times.
+
+There is usually a lot more operations (I defined like 250+ in my compiler syntax) and it's up to the output module (FM sound drivers and MIDI are totally different beast).
+
+I quote some MML from my actual song:
+
+```
+// Trombone -----------------
+_ 1	CH1 @57 V100 o4 l16 GATE_DENOM8 Q7 RSD60 CSD40 DSD40 BEND_CENT_MODE24 P74
+A	r2.g4>c4g4  d2.e-4f4b-4  a2.g8agf4.c8  f1
+	  K-5c4d4
+	e-2.c4g4e-4 f2.f4b-4g4> c1^8r8<br>cr d1.
+```
+
+Using this classic technology has its own advantage - it works very well with flexible text editor operations, version controls like git, and often features like [Language Server Protocol](https://langserver.org/). But apparently it's not for everyone - its learning curve is quite steep...
+
+In any case, when I decided to use my own MML compiler (to both ease composition as well as dogfooding), I had a handful of tools to make it possible:
+
+- [mugene](https://github.com/atsushieno/mugene) MML compiler: the compiler toolchain. I actually (ab)use it in my various projects e.g. [fluidsynth-midi-service](https://github.com/atsushieno/fluidsynth-midi-service) to ensure that it is also usable to play arbitrary MIDI songs.
+  - It comes with LSP (which somehow does not seem to be working right now...) that implements basic operations like "go to definition".
+  - The syntax is poorly explained... I wrote [a book about the MML syntax](https://github.com/atsushieno/mugene-guide-book) but it is in Japanese...
+- [xmdsp](https://github.com/atsushieno/xmdsp), a visual SMF player, to check various MIDI states as well as showing 16 keyboards stack. It also helps checking compiled songs as the file is modified/updated.
+- [xmmk](https://github.com/atsushieno/xmmk), a virtual MIDI keyboard that you can play with PC keyboard. It had evolved a lot during my composition months, have piano mode as well as chromatic mode (no black keys), record whatever you played into MML, compile MML and modify MIDI state on the fly, select whatever MIDI module you use to give detailed bank select info, etc. etc...
+- [managed-midi](https://github.com/atsushieno/managed-midi) everything above is based on this MIDI API foundation.
+
+These were the basic toolset I used (and of course, text editors like [Geany](https://www.geany.org/) or VSCode) and git(hub). I ended up to have more than 100 commits for my song repository (apart from the compiler repo where I put the final release version of the songs). It feels more like daily development(!)
+
+At the same time, certain amount of time was spent on improving those tools. It is exactly dogfooding. Those tools are still not very friendly to anyone other than myself, but I am quite happy to have shown the possibility that this songwriting approach actually worked.
+
+
+## Setting objectives and task management
+
+I have set up a private github repository to save production (songwriting has been done in my other repository) and related logistics in both commits and issues.
+
+![recorded github issues]({{site.baseurl}}/_drafts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc.png)
+
+![recorded github issue example]({{site.baseurl}}/_drafts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc(1).png)
+
+The first thing I had to do was to determine final production: a downloadable data contents are the easiest option, but even for that I have to prepare for that. Music CDs are better but needs cover jacket image and printing.
+
+Since I decided my basic direction that I use my MML compiler and Tracktion, the outcomes are almost determined as:
+
+1. MP3
+2. CD, unless I fail to manage it
+3. source MML files and MIDI files
+4. source Tracktion edit data
+
+The latter items are especially unique. Those composers typically use DAWs too, but they usually don't provide their source data. It would be mostly because 1) they are shy, 2) they don't want to expose their technique, and 3) it makes less sense to publish sources that depend on commercial audio plugins such as Kontakt. But I am from completely different world - open source. And one of my goals is to promote my MML compiler and tools. It makes more sense to publish them.
+
+Anyhow, after determining the final outcome, I broke down them into the individual tasks:
+
+- ask painter friend to draw a picture for the CD jacket
+- compose the songs(!)
+  - at MIDI level
+  - at DAW level
+- mastering
+- create a crossfade demo video / audio for youtube and soundcloud
+- Downloadable contents and "download cards"
+  - finalize the zip archive
+  - design download cards (namecards) and order at printing company.
+  - set up downloadable personalized URLs (that can individually disabled in case URLs are leaked)
+  - print QR codes for them onto label paper and attach them to the printed cards.
+- CD
+  - buy blank CD media and burn them. This time I prepared only < 30 copies.
+  - design CD jacket as a paper package, and order printable paper and cover plastic bags. This time it was at [a local online shop](https://cd.mks-jpn.com/) that comes with half-crafted paper.
+  - print all of them. There was a big problem at this level - I had to consume 5 ink bottles just to print 30-ish copies of them(!)
+  - all the remaining crafting works.
+  - get inner-CD bags. I bought them at local music CD store called Disc Union.
+  - buy printable CD labels, design and print them, then paste all onto the copied CDs.
+- writing a book about HOW-TOs: I gave up writing one in the end, apparently there was not enough time. I am writing this post now instead.
+- register CDDB information and MP3 song fingerprints at [MusicBrainz](https://musicbrainz.org/).
+
+Preparing CD was kind of fun experience. I felt like I were a factory.
+
+![download cards (ordered as namecards)]({{site.baseurl}}/_drafts/IMG_20190224_105200.jpg)
+
+![printed jacket paper at home]({{site.baseurl}}/_drafts/IMG_20190226_142146.jpg)
+
+![copied CDs with printed labels]({{site.baseurl}}/_drafts/IMG_20190227_110702.jpg)
+
+![final CD package]({{site.baseurl}}/_drafts/IMG_20190226_144608.jpg)
+
+
+## X-day, and aftermath
+
+Usually, those exhibitors have some friends in their community (which I guess is probably at "doujin" music community, or some DTM community), but I was almost alone, except that I asked one of my Xamarin community friend to help sales. I needed somewhat "attractive" setup for my booth, and this is what I ended up:
+
+![my booth at 幻想音楽祭]({{site.baseurl}}/_drafts/20190302105736_p.jpg)
+
+I prepared some papers with my tooling screenshots, explaining how I composed those songs, and advertising that I was selling the source data. I was sure that there would be some computer geeks (because they are often into games, thus VGMs, and this kind of events too). I was right, people kept visiting my booth and asked what it is about. They often wanted to listen to what the songs are like, and roughly 50% of them bought the CD. It was very delightful moment.
+
+I sold 12 CDs in 3.5 hours (each one is at 1000JPY), which seemed to be quite good number according to my research on the web (there are many people who end up with < 10 sales at such an event). I think there were like 300-500 visitors and exhibitors, so the rate was quite good. Yet, 50% conversion rate is not very good - half of those people were not happy with my composition outcome. I think it's quite low - when I visit people's booth and listen to their demo songs, I usually buy their CDs at like 80% rate. I deserve that. It should be better next time. Still! the total sales was a good number.
+
+After the event, I registered [a new online download shop page](https://xamaritans.booth.pm/items/1250711) at an existing website account that I had. There were a few more sales for downloads. And wrote blog post about that, and now this one to conclude.
+
+I hope to have next chance to iterate this creation cycle, hopefully with improved composition skill set, and with somewhat different songwriting direction (like EDMs, Vocaloids, rocks, etc.).
