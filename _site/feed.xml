@@ -1,40 +1,882 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Mar 2019 20:04:46 +0900</pubDate>
-    <lastBuildDate>Fri, 08 Mar 2019 20:04:46 +0900</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <title>music to your ears</title>
+    <description>Blog posts, mostly about software engineering and music tech, by Atsushi Eno.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Mar 2019 09:46:01 +0000</pubDate>
+    <lastBuildDate>Sun, 10 Mar 2019 09:46:01 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Instant music CD release experience for an indie music festival</title>
+        <description>&lt;p&gt;I had been quiet after attending to Audio Developer Conference (in English). I had been enjoying Europe after 10+ years of absence there. Then I changed something in life… I had been busy to become a songwriter. It’s going to be somewhat long story.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h2 id=&quot;im-not-interested-in-long-tale-just-show-me-the-outcome&quot;&gt;I’m not interested in long tale, just show me the outcome&lt;/h2&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;These are the trailers on soundcloud and youtube. They are my first video and song uploads…!&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/579425697&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/_-QcC_td3lM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
+&lt;p&gt;All those song files at MIDI level are published to my &lt;a href=&quot;https://github.com/atsushieno/mugene/tree/master/samples/mugene-fantasy-suite&quot;&gt;github repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And the downloadable version is available &lt;a href=&quot;https://xamaritans.booth.pm/items/1250711&quot;&gt;at an online shop “Booth”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-wth-did-you-become-a-composer&quot;&gt;So WTH did you become a composer?&lt;/h2&gt;
+
+&lt;p&gt;It is surprising maybe to those who know me somewhat well. When I attended to ADC2018, I talked to some random people and then I shot question around, like “do you compose music?” And the answers were &lt;em&gt;mostly&lt;/em&gt; “yes”.&lt;/p&gt;
+
+&lt;p&gt;I felt incompetent. They were mostly songwriters and they were mostly developers at the same time. I wasn’t. I have been developing MML (music macro language) compiler which is all about songwriting in text, but I didn’t produce music with it… at least, a lot. I did some, but it was like in 199x and then I only “ported” some old compositions to my own language. That was kind of dogfooding, but I should have done more of those. I wasn’t indeed much confident with my own principles “I can compose songs with my own toolchains”.&lt;/p&gt;
+
+&lt;p&gt;I thought that I should begin something. The first thing that came to my mind was something like &lt;a href=&quot;http://www.m3net.jp/&quot;&gt;M3&lt;/a&gt;, one of the biggest indie music festival which inherits in-house Comic-Market-like culture, with 10,000 visitors and 1000-ish exhibitors. I had some experience with that kind of “festival”, so I thought it would be good for me. It was in late November and the next M3 was too far away. I wanted to begin with “easier” one for entry level composer.&lt;/p&gt;
+
+&lt;p&gt;That’s how I found &lt;a href=&quot;http://gensouongaku.info/fes/&quot;&gt;“幻想音楽祭”&lt;/a&gt; - it was a festival specific to “Fantasy” kind of music. It comes with “you define what ‘fantasy’ means” statement. It practically meant something like soundtracks (like “the Lord of the Rings”), VGMs (Final Fantasy series), even storytelling (in Japangrish we call them “voice drama CDs”), can be literally anything…&lt;/p&gt;
+
+&lt;p&gt;That was kind of familiar to me. I applied for it with little-to-no thoughts. After a few weeks, the organizers stated that they expanded the space and all the applicants were accepted. There were about 90 exhibitor groups in the end, including mine.&lt;/p&gt;
+
+&lt;p&gt;I was under pressure. I hadn’t really composed anything for like 15+ years. And now I have to compose something only by myself. I used to write some songs with a MIDI device (&lt;a href=&quot;https://en.wikipedia.org/wiki/Roland_Sound_Canvas&quot;&gt;Roland SC-8820&lt;/a&gt;) when I was a student, but that was ages ago. In later life I often tried to learn modern DAWs like FL Studio, as well as Komplete, and tried to learn them using Windows, but I didn’t make it with Windows after all. I thought I could dump and run away… (then the organizers will mark me as “should be dropped for future festivals”)&lt;/p&gt;
+
+&lt;p&gt;Fortunately I had certain amount of time. I could spend all my time for learning how to compose songs using modern software, as well as composition basics. It was post-ADC time and I had a lot of interest in the new technology, but I decided to concentrate on songwriting. To dive into this kind of software industry, I have to learn those technologies anyways.&lt;/p&gt;
+
+&lt;h2 id=&quot;determining-basic-directions&quot;&gt;Determining basic directions&lt;/h2&gt;
+
+&lt;p&gt;At that state, everything was left in blank. I could take any approach to produce a “music disc” (that was what I wrote in my application submission: “I will come up with a music disc, sources for them, and how-to book about it)”… I had my MML compiler, but I was not really confident enough that it’s usable for “practical” use for daily songwriting. I played with &lt;a href=&quot;https://www.tracktion.com/products/waveform&quot;&gt;Tracktion Waveform&lt;/a&gt; a bit (because it was one of those emerging DAWs that support Linux desktop) but not much.&lt;/p&gt;
+
+&lt;p&gt;In any case, I began with “playing with sounds” i.e. listen to sound and familiarize myself, either with my old MIDI toy SC-8820, or VST plugins like Collective on Waveform. It was like, I ended a day just with only four bars with one simple string chord as outcome. Then I started playing with Waveform more, by importing various MIDI song files that I used to create (they were mostly copy of some metal bands like Dream Theater, or similar Japanese prog-rock bands), altering MIDI program changes to VSTi to get familiarized with modern sound.&lt;/p&gt;
+
+&lt;p&gt;At that stage, I only knew General MIDI programs, but it was actually more than what Collective has. I was like “why does it not come with piccolo…”, and I often fell back to &lt;a href=&quot;https://github.com/Birch-san/juicysfplugin&quot;&gt;juicysfplugin&lt;/a&gt; + FluidR3_GM.sf3. I seemed a dead-end to me after all…&lt;/p&gt;
+
+&lt;p&gt;At that time, I planned to play with &lt;a href=&quot;https://github.com/WeAreROLI/JUCE/&quot;&gt;JUCE&lt;/a&gt; and &lt;a href=&quot;https://github.com/Tracktion/tracktion_engine/issues&quot;&gt;tracktion_engine&lt;/a&gt; on my primary Linux desktop, but I found it nearly impossible because JUCE on Linux is quite featureless (no VST3, no Lv2, poor UI implementation etc.). Therefore I ended up to set up a new Mac environment (which is still supplemental and my primary desktop is - and will be - Linux). So I decided to 1) basically compose songs using MML on my daily Linux desktop, and 2) bring MIDI songs to Waveform and continue on Mac with Kontakt etc. After all, it was a quite successful decision. It was already past new year days.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-mml-for-daily-composition&quot;&gt;Using MML for daily composition&lt;/h2&gt;
+
+&lt;p&gt;I haven’t really explained what MML is. Music Macro Language is a text program-like syntax that is used to describe songs by operations, which are compiled to some song files. It was popular in 20th century, and then modern DAWs took place in DTM world. There was no dominant song data format, so as no dominant MML syntax - just like programming languages, there were various syntaxes. It was because, the output can be either FM/PSG chip (mostly ones from YAMAHA), MIDI, or even BEEP sound. My compiler is to generate Standard MIDI file.&lt;/p&gt;
+
+&lt;p&gt;There are always certain people who prefer “traditional styles” - for example, Yuzo Koshiro, a famous VGM composer, had released &lt;a href=&quot;https://github.com/onitama/mucom88&quot;&gt;their FM synthesizer driver&lt;/a&gt; (which is for virtual synthesizer as well as for physical FM chip) on github, in November, 2018. And then there were some people who released songs based on the driver. That’s what happened since 2018….&lt;/p&gt;
+
+&lt;p&gt;Anyhow I should tell you what it is like. The examples below are typical MML operations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;d&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;f&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt; : they are “notes” in sol-fa (do, re, mi…).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; : rest&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;o4&lt;/code&gt; : set octave to 4&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; : shift octave (either up or down, depending on the syntax definition)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;V100&lt;/code&gt; : set channel volume to 100.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;l8&lt;/code&gt; : set “default length” to 8 (eighth note)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; … &lt;code class=&quot;highlighter-rouge&quot;&gt;]4&lt;/code&gt; : repeat from &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;]&lt;/code&gt;, 4 times.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is usually a lot more operations (I defined like 250+ in my compiler syntax) and it’s up to the output module (FM sound drivers and MIDI are totally different beast).&lt;/p&gt;
+
+&lt;p&gt;I quote some MML from my actual song:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Trombone -----------------
+_ 1	CH1 @57 V100 o4 l16 GATE_DENOM8 Q7 RSD60 CSD40 DSD40 BEND_CENT_MODE24 P74
+A	r2.g4&amp;gt;c4g4  d2.e-4f4b-4  a2.g8agf4.c8  f1
+	  K-5c4d4
+	e-2.c4g4e-4 f2.f4b-4g4&amp;gt; c1^8r8&amp;lt;br&amp;gt;cr d1.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using this classic technology has its own advantage - it works very well with flexible text editor operations, version controls like git, and often features like &lt;a href=&quot;https://langserver.org/&quot;&gt;Language Server Protocol&lt;/a&gt;. But apparently it’s not for everyone - its learning curve is quite steep…&lt;/p&gt;
+
+&lt;p&gt;In any case, when I decided to use my own MML compiler (to both ease composition as well as dogfooding), I had a handful of tools to make it possible:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/atsushieno/mugene&quot;&gt;mugene&lt;/a&gt; MML compiler: the compiler toolchain. I actually (ab)use it in my various projects e.g. &lt;a href=&quot;https://github.com/atsushieno/fluidsynth-midi-service&quot;&gt;fluidsynth-midi-service&lt;/a&gt; to ensure that it is also usable to play arbitrary MIDI songs.
+    &lt;ul&gt;
+      &lt;li&gt;It comes with LSP (which somehow does not seem to be working right now…) that implements basic operations like “go to definition”.&lt;/li&gt;
+      &lt;li&gt;The syntax is poorly explained… I wrote &lt;a href=&quot;https://github.com/atsushieno/mugene-guide-book&quot;&gt;a book about the MML syntax&lt;/a&gt; but it is in Japanese…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/atsushieno/xmdsp&quot;&gt;xmdsp&lt;/a&gt;, a visual SMF player, to check various MIDI states as well as showing 16 keyboards stack. It also helps checking compiled songs as the file is modified/updated.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/atsushieno/xmmk&quot;&gt;xmmk&lt;/a&gt;, a virtual MIDI keyboard that you can play with PC keyboard. It had evolved a lot during my composition months, have piano mode as well as chromatic mode (no black keys), record whatever you played into MML, compile MML and modify MIDI state on the fly, select whatever MIDI module you use to give detailed bank select info, etc. etc…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/atsushieno/managed-midi&quot;&gt;managed-midi&lt;/a&gt; everything above is based on this MIDI API foundation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These were the basic toolset I used (and of course, text editors like &lt;a href=&quot;https://www.geany.org/&quot;&gt;Geany&lt;/a&gt; or VSCode) and git(hub). I ended up to have more than 100 commits for my song repository (apart from the compiler repo where I put the final release version of the songs). It feels more like daily development(!)&lt;/p&gt;
+
+&lt;p&gt;At the same time, certain amount of time was spent on improving those tools. It is exactly dogfooding. Those tools are still not very friendly to anyone other than myself, but I am quite happy to have shown the possibility that this songwriting approach actually worked.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-objectives-and-task-management&quot;&gt;Setting objectives and task management&lt;/h2&gt;
+
+&lt;p&gt;I have set up a private github repository to save production (songwriting has been done in my other repository) and related logistics in both commits and issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Screenshot_2019-03-09 atsushieno FantasyMusicDisc.png&quot; alt=&quot;recorded github issues&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/gh-issue-example.png&quot; alt=&quot;recorded github issue example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing I had to do was to determine final production: a downloadable data contents are the easiest option, but even for that I have to prepare for that. Music CDs are better but needs cover jacket image and printing.&lt;/p&gt;
+
+&lt;p&gt;Since I decided my basic direction that I use my MML compiler and Tracktion, the outcomes are almost determined as:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;MP3&lt;/li&gt;
+  &lt;li&gt;CD, unless I fail to manage it&lt;/li&gt;
+  &lt;li&gt;source MML files and MIDI files&lt;/li&gt;
+  &lt;li&gt;source Tracktion edit data&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The latter items are especially unique. Those composers typically use DAWs too, but they usually don’t provide their source data. It would be mostly because 1) they are shy, 2) they don’t want to expose their technique, and 3) it makes less sense to publish sources that depend on commercial audio plugins such as Kontakt. But I am from completely different world - open source. And one of my goals is to promote my MML compiler and tools. It makes more sense to publish them.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, after determining the final outcome, I broke down them into the individual tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ask painter friend to draw a picture for the CD jacket&lt;/li&gt;
+  &lt;li&gt;compose the songs(!)
+    &lt;ul&gt;
+      &lt;li&gt;at MIDI level&lt;/li&gt;
+      &lt;li&gt;at DAW level&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;mastering&lt;/li&gt;
+  &lt;li&gt;create a crossfade demo video / audio for youtube and soundcloud&lt;/li&gt;
+  &lt;li&gt;Downloadable contents and “download cards”
+    &lt;ul&gt;
+      &lt;li&gt;finalize the zip archive&lt;/li&gt;
+      &lt;li&gt;design download cards (namecards) and order at printing company.&lt;/li&gt;
+      &lt;li&gt;set up downloadable personalized URLs (that can individually disabled in case URLs are leaked)&lt;/li&gt;
+      &lt;li&gt;print QR codes for them onto label paper and attach them to the printed cards.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CD
+    &lt;ul&gt;
+      &lt;li&gt;buy blank CD media and burn them. This time I prepared only &amp;lt; 30 copies.&lt;/li&gt;
+      &lt;li&gt;design CD jacket as a paper package, and order printable paper and cover plastic bags. This time it was at &lt;a href=&quot;https://cd.mks-jpn.com/&quot;&gt;a local online shop&lt;/a&gt; that comes with half-crafted paper.&lt;/li&gt;
+      &lt;li&gt;print all of them. There was a big problem at this level - I had to consume 5 ink bottles just to print 30-ish copies of them(!)&lt;/li&gt;
+      &lt;li&gt;all the remaining crafting works.&lt;/li&gt;
+      &lt;li&gt;get inner-CD bags. I bought them at local music CD store called Disc Union.&lt;/li&gt;
+      &lt;li&gt;buy printable CD labels, design and print them, then paste all onto the copied CDs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;writing a book about HOW-TOs: I gave up writing one in the end, apparently there was not enough time. I am writing this post now instead.&lt;/li&gt;
+  &lt;li&gt;register CDDB information and MP3 song fingerprints at &lt;a href=&quot;https://musicbrainz.org/&quot;&gt;MusicBrainz&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Preparing CD was kind of fun experience. I felt like I were a factory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/IMG_20190224_105200.jpg&quot; alt=&quot;download cards (ordered as namecards)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/IMG_20190226_142146.jpg&quot; alt=&quot;printed jacket paper at home&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/IMG_20190227_110702.jpg&quot; alt=&quot;copied CDs with printed labels&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/IMG_20190226_144608.jpg&quot; alt=&quot;final CD package&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;x-day-and-aftermath&quot;&gt;X-day, and aftermath&lt;/h2&gt;
+
+&lt;p&gt;It was on Mar. 2nd. Usually, those exhibitors have some friends in their community (which I guess is probably at “doujin” music community, or some DTM community), but I was almost alone, except that I asked one of my Xamarin community friend to help sales. I needed somewhat “attractive” setup for my booth, and this is what I ended up:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/20190302105736_p.jpg&quot; alt=&quot;my booth at 幻想音楽祭&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I prepared some papers with my tooling screenshots, explaining how I composed those songs, and advertising that I was selling the source data. I was sure that there would be some computer geeks (because they are often into games, thus VGMs, and this kind of events too). I was right, people kept visiting my booth and asked what it is about. They often wanted to listen to what the songs are like, and roughly 50% of them bought the CD. It was very delightful moment.&lt;/p&gt;
+
+&lt;p&gt;I sold 12 CDs in 3.5 hours (each one is at 1000JPY), which seemed to be quite good number according to my research on the web (there are many people who end up with &amp;lt; 10 sales at such an event). I think there were like 300-500 visitors and exhibitors, so the rate was quite good. Yet, 50% conversion rate is not very good - half of those people were not happy with my composition outcome. I think it’s quite low - when I visit people’s booth and listen to their demo songs, I usually buy their CDs at like 80% rate. I deserve that. It should be better next time. Still! the total sales was a good number.&lt;/p&gt;
+
+&lt;p&gt;After the event, I registered &lt;a href=&quot;https://xamaritans.booth.pm/items/1250711&quot;&gt;a new online download shop page&lt;/a&gt; at an existing website account that I had. There were a few more sales for downloads. And wrote blog post about that, and now this one to conclude.&lt;/p&gt;
+
+&lt;p&gt;I hope to have next chance to iterate this creation cycle, hopefully with improved composition skill set, and with somewhat different songwriting direction (like EDMs, Vocaloids, rocks, etc.).&lt;/p&gt;
 </description>
-        <pubDate>Fri, 08 Mar 2019 20:04:39 +0900</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2019/03/08/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2019/03/08/welcome-to-jekyll.html</guid>
+        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019/03/08/_.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/03/08/_.html</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>ADC2018, SOUL and APLs</title>
+        <description>&lt;h2 id=&quot;adc2018&quot;&gt;ADC2018&lt;/h2&gt;
+
+&lt;p&gt;When I kind of decided that I leave Xamarin development job and dive into audio development world in early summer, I had one thing to do in mind: join &lt;a href=&quot;https://juce.com/adc/&quot;&gt;Audio Developers Conference (ADC) 2018&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The two days conference (three days if training day is counted) is over, and I was quite happy there. There was an announcement about a new language called SOUL, the SOUnd Language. You can find the session recording on Youtube.&lt;/p&gt;
+
+&lt;p&gt;https://youtu.be/UHK1QQM0bnE?t=910&lt;/p&gt;
+
+&lt;p&gt;These days I had been checking various music and audio related software libraries and tools to write many blog entries for my experimental &lt;a href=&quot;https://adventar.org/calendars/3353&quot;&gt;audio tech/library/tools Advent Calendar&lt;/a&gt; in Japanese, and  reading a handful of text about this kind of stuff for it. I think I understand how awesome this SOUL stuff &lt;em&gt;could&lt;/em&gt; be (as a skeptical developer I would keep saying that it was still just an announcement) and thought I should describe why. It is partly translated from what I have prepared in Japanese, even before ADC had started.&lt;/p&gt;
+
+&lt;p&gt;I have to say, I have never been familiar with audio development. I joined ADC2018, while I didn’t know that it is actually mostly about JUCE. I kept telling friends like “I will be joining ADC to possibly find a next job there”, but I was not sure what it is like. I was not even serious about joining it (“I would join it, but I’d quickly give up if something more fun thing happens” kind of). There are things that are likely obvious to those audio devs attending there and yet I didn’t know. I am never a dedicated C++ programmer. But ADC was still fun, I learned a lot of things.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-is-apl-like&quot;&gt;So, what is APL like?&lt;/h2&gt;
+
+&lt;p&gt;SOUL is meant to be a new &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_audio_programming_languages&quot;&gt;APL（audio programming language）&lt;/a&gt; and further, platform. APLs are languages, not just a single language (and here it does not mean “A Programming Language”). Take it like VPLs-alike (visual programming languages).&lt;/p&gt;
+
+&lt;p&gt;They designed to process audio and compose (or more precisely, “create” ?) music or realize sound effects. Ideally, they are designed for non-programmers (or maybe “not very advanced” programmers).&lt;/p&gt;
+
+&lt;p&gt;They are actually language-based tools rather than language specifications. Examples of APLs are: Csound, ChucK, Pure Data, Alda, Faust, Tidal. What is interesting there is, they always define their own languages. Actually some of those languages are simply based on Lisp or Scheme and it is argurable that they are under their own “language”, but let’s skip that so far, they ultimately end up with their own ecosystem.&lt;/p&gt;
+
+&lt;p&gt;An interesting aspect of those languages is that they never make use of virtual machines like Java or .NET. Describing music or sound effects would be very useful especially in apps like games, and there are many apps or games written in Java or .NET. Why should we learn a completely different language? Can’t they just be some audio libraries like raw-audio libs or raw-midi libs so that we can arbitrarily manipulate those sound objects…?&lt;/p&gt;
+
+&lt;p&gt;However, those APL designers have reasons to do so. Interestingly some of those are described in academic papers. Among those papers I pick up an interesting one from Andrew Sorensen, regarding his language Extempore. It is described from very primitive level, examining every possibility to achieve minimal latency.&lt;/p&gt;
+
+&lt;p&gt;https://openresearch-repository.anu.edu.au/handle/1885/144603&lt;/p&gt;
+
+&lt;p&gt;Extempore is a language for “live coding” (he calls it a “cyber-physical” programming language). You can find it from this keynote recroding from OSCON 2014:&lt;/p&gt;
+
+&lt;p&gt;https://www.youtube.com/watch?v=yY1FSsUV-8c&lt;/p&gt;
+
+&lt;h2 id=&quot;audio-processing-use-cases&quot;&gt;Audio processing use cases&lt;/h2&gt;
+
+&lt;p&gt;Typical jobs that APLs deal with are often about “realtime” processing of audio. What are such jobs for example?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Think about a virtual piano app. You press a key, and the app reacts it by sending out piano sound to audio output. If you pressed a key and it took one second, then you don’t want to use it.&lt;/li&gt;
+  &lt;li&gt;MP3 players decode &lt;code class=&quot;highlighter-rouge&quot;&gt;*.mp3&lt;/code&gt; files and send the result to audio output. Time of decoding is usually shorter than raw PCM playtime, but if the output was flaky then it’s useless.&lt;/li&gt;
+  &lt;li&gt;DAWs (digital audio workstations) are used to compose music in mutiple tracks. Depending on songs, it might have to send audio outputs as well as MIDI outputs in sync. If they are out of sync, the resulting music does not sound right.&lt;/li&gt;
+  &lt;li&gt;Think about live performance using digital instruments (like the OSCON keynote video), optionally with visuals synchronized. If the app freezes even very short time like less than 0.1 sec, it is still problematic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those tasks might not necessarily be “realtime” in the context discussed here, but those tasks are under tight requirement on “precise” processing time.&lt;/p&gt;
+
+&lt;h2 id=&quot;realtime-requirement&quot;&gt;Realtime requirement&lt;/h2&gt;
+
+&lt;p&gt;So, it seems precise processing time is important. But how precise they need to be? How “realtime” should they be? 1 second delay is obviously wrong. 100 milliseconds? 10? 1? … It’s not obvious to us anymore. Similar realtime-ness is required in 3D animation frame rates in VRs e.g. 60fps, 120fps… Audio is similarly constrained, it is said that if latency becomes like 20 milliseconds of delay then some people would notice.&lt;/p&gt;
+
+&lt;p&gt;I should make one point clear; realtime processing is NOT about high-performance processing as in “most efficient performance”. The requirement is: &lt;strong&gt;a recurring task must be always invoked and run within the expected time frame&lt;/strong&gt;. It is in a sense completely opposite of high-performance computing.&lt;/p&gt;
+
+&lt;p&gt;In modern general computing environment, there are preemptive multitasking (processes and/or threads) that are managed by the operating system. The Sorensen paper discusses other possibilities (manually-cooperative multitasking) and they are real on some embedded environment, but for APLs it would be mostly preemptive world. (Devices like ROLI Blocks and Littlefoot compiler might be the other way.)&lt;/p&gt;
+
+&lt;p&gt;In any case, what is important here is that such a realtime app needs to run on a raltime thread (or process) which needs to be supported by the OS. General threads don’t have such guarantee that it must be invoked in “timely” manner.&lt;/p&gt;
+
+&lt;p&gt;And virtual machines have further problems. Namely, garbage collectors “stop the world” (including app threads) to collect unused memory blocks, and JIT compilers compiles VM code to the actual machine code at run-time. They result in uncountable delays.&lt;/p&gt;
+
+&lt;p&gt;Sorensen mentions SonicPi on Ruby, Gibber on JavaScript, Impromptu on Scheme, and Overtone on Clojure as examples.&lt;/p&gt;
+
+&lt;p&gt;Therefore, languages like Extempore, avoids those problems by designing their own language to generate native code statically, and require explicit memory allocation. These days LLVM-IR is the common code generator solution to them. Probably Lisp/Scheme parsers were their frontend solution too, that’s my guess.&lt;/p&gt;
+
+&lt;p&gt;As of 2018 we, virtual machine based developers, would have some words on that premise (e.g. we have AOT solution), but let’s put it aside. Today I’m more interested in what SOUL provides.&lt;/p&gt;
+
+&lt;h2 id=&quot;language-runtime-and-sound-server-communication&quot;&gt;Language runtime and sound server communication&lt;/h2&gt;
+
+&lt;p&gt;One interesting point that Sorensen made in that paper was that a full stack solution vs. half stack solution for an APL - it is still possible to write client-server system, and it can be either intra-process or inter-process. So, instead of implementing everything in one single language and framework, it is possible to use multiple languages and frameworks, implementing each interested parts and cooperate together.&lt;/p&gt;
+
+&lt;p&gt;For intra-process design, there would be a realtime sound server implementation and client language bridge by FFI. According to the paper, ChucK, Impromptu, and Fluxus are based on them. For inter-process model, SuperCollider is an example. Extempore is based on inter-process model too, at this state (the paper says it’s been inbetween those two models).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-language-barriers&quot;&gt;the Language Barriers&lt;/h2&gt;
+
+&lt;p&gt;Leaving Sorensen paper aside, I have been always interested in having some sound objects model that can be manipulated in C# and Mono. I had almost no interest in whatever .NET Windows people had created. Windows-only stuff will just die soon. I’m only interested in cross-platform solution.&lt;/p&gt;
+
+&lt;p&gt;There are still some hackers who created portaudio bindings or rtaudio bindings. I have my own binding for libsoundio, but there are other people who did it too. There is Web Audio API in Javascript world, and at ADC2018 there was a session about bringing audio API into C++ Standards (“std::audio”). There is no such thing in .NET. They are years behind C++ or Web.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, the next step to raw audio, what I wanted was to have some common sound object models that those APLs could possibly share. Right now they are living around Babel tower, but some commonplace could help improve the situation towards cross-language solution.&lt;/p&gt;
+
+&lt;p&gt;Then I can instantiate audio output tracks and play in timely manner, coordinating them all, just like DAWs do. I have my own MIDI player and even text macro compiler to generate MIDI files, so I had some foundation.&lt;/p&gt;
+
+&lt;p&gt;I had some look at a couple of APLs, and I always end up to find no general music solution there. Their outputs are specific to some genres of music. It’s not what I had seen back in 20th century in Japan - people use FM synthesizers and MIDI instruments for various kind of music, even with limited expressiveness.&lt;/p&gt;
+
+&lt;p&gt;My understanding is that there can be unlikely good language. Instead there could be common sound platform among any new possible languages.&lt;/p&gt;
+
+&lt;p&gt;Another concern I had was that I should probably write everything in C (or at least provide C API). My primary language was C# (although I’m practically free to choose any language now that I’m independent) and C# still has many developers, but if it has technical difficulty (like discussed above) then it is just a bad choice on technology.&lt;/p&gt;
+
+&lt;p&gt;The client-server model on that Sorensen paper was then likely the next thing I could try i.e. design primitive sound object system and manipulate them privately via C#.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I don’t really care much about audio latency. But I would mind if I were going to perform some sort of live coding, and that’s still a possible future.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-soul-takes-place&quot;&gt;where SOUL takes place&lt;/h2&gt;
+
+&lt;p&gt;SOUL announcement just appeared when my idea is like that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/p4hsr7ea-Ru1M0FBf20Q-qKHutAzOQC-OXwdP6noTzqNrdBttNBl5ETdMvf0sp37PK4Zn9byb_1fhukXnMLnk1IuhkKEZZRyiW8wZDHuQ9dLYdXTWjQakZl5OIrwHIwlOFokgr6bE8tSYrFY8wTYhvf2_jOuE5puQJllDEumJi6NYc0-LlhXrPPVxBzuI8UROQA0btwMS0RDRCWBSrJZB3RSKHCiwkifbAc4ziZEBmiNNVbOU1DKSgDYWxXariCZ10GCqc9TKdvymEupdpkHCC8-47QNkS5skRXMI0oSWzQeioprOOo2TmnE1iD6L296lWGZiBUB5BpCljPCzcvv2QgX5v6qmvdwAW4otJ3yEtpZ1jG7JPWBTct-1xEso3MWQ0QEjze41CXYpGHR8bECcBnChjXLmLJIEQX9xnGw4L3l8VHYxwpsM5wga4O2hKqnjxwY1Yh9lPAsQ2SONT7a11MpQcc50mzUUidVx6RQxDuvYNznUCvz9rTnV2K2hr7HJb0acLq47OkYP0KACeNbvZTbg3o1s78pzywpPyiZ34Qa5m0RGFi3c1YfRWjRjXu53j7qzbWxOGvj6l52gbnBPz282bTaetlAjt1YiDJX3wIEl9qqxAAeVjB4n3FuIk7m4c-iwswC3Wm3MyGDvFO9MTR2DA=w971-h491-no&quot; alt=&quot;soul-worst-case-scenario&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(I have no images storage so I put them on Google photos, that you have to navigate to them…)&lt;/p&gt;
+
+&lt;p&gt;This is a screenshot from the video streaming. You can use any language to write a programm that manipulates SOUL API, which is likely something like OpenGL Shader. The SOUL language sources are compiled into some native code using LLVM IR and run by JIT.&lt;/p&gt;
+
+&lt;p&gt;What’s good there is that the sound platform itself does not give up audio latency. It actually aims to provide better solution, by providing chance for hardware-accelerated processing of the sound platform:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-wiCGiJanLo66PJ0R78nzCbACHiK1iCiQHc7jBMOp8nUMnxQMVUCIbTCTIJ9Tmgc3lOO9Bf6dpoYZY2XbqsluE77UqmdFpTDHssTH0FwjLmUN6c8DpKEqwstCK9QAM_l_IcJpEZLxCdaLYhJqsM29yS6W5Dbb9CUcx_qI6aoFGgZ6W0oQEe_eRW98C8ese6ZWrBdZw7mOQOOcNUlGb27vXvOWHABC1mAlQuLCvpntMHrhlrvzeYvlAYsx9kg-crlIp4_Z3g23xxTFeIAsvsKUrRnHemsYxAhG61gzBdwoyub6OlZSe6lJd2MgQgvO3nE9oahdNNtJ8uwXmOPHD4TJEOVbbi8SDQj0P7s6kANdzVhDdkn0nKjwva7kMDTLDQFYpcsZ48aZ7WDHS_C4N8eV1YyNGwUZyH3C5J4tkyBzZexX5NpRoI0diibcdcpEj81DRvm9wsomm5TtnOd3FDq91zUdRbZ5-VtomCYcG2RNSfKf5YTlIayjh_NZpGlEETOgSrfXFzxyNm11CjgK_QNOnPyxKe_cYMx9AtPxQhJTtdn_0ZN_uFyBj39Y2EiL1oRFsvaiwtivsllatDjLJ8xAoKU6ANkkhg0wsQ4CqP04JdpV_oY5HpEG_ReHR3q8HcnM7uAvO5REwxh6Cn9eE_ZI4VDBg=w972-h490-no&quot; alt=&quot;soul-hardware-accelerated-case-scenario&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hardware driver accelerated programs run on better (less) latency. (Of course there are some business opportunities that the SOUL language developers could aim at.)&lt;/p&gt;
+
+&lt;p&gt;Yes, JIT is something that those APL designers worry about, so as I assume in theory. The solution here is similar to how shaders are compiled i.e. GPUs. GPUs are popular, but for this SOUL devices we would be mostly skeptical. That may or may not be a matter of time, I have no idea now.&lt;/p&gt;
+
+&lt;h2 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h2&gt;
+
+&lt;p&gt;My concern on SOUL is mostly about compilation pipeline, especially on how instant the turnaround time would be. If generating piano sound from keypress is somewhat slow, then it may not be a solution.&lt;/p&gt;
+
+&lt;p&gt;Extempore, as a live-coding ready language, compiles their XTLang sources into LLVM IR so that when it is invoked it is instantly executed. But it also involves compilation, which those language users would pre-compile on their editor. Compilation should still take some time, unless the language itself is not very expressive.&lt;/p&gt;
+
+&lt;p&gt;SOUL itself is not likely highly expressive (it does not seeem to aim to be a universal language) so the client languages (for me maybe C#) have to generate fairly complicated code.&lt;/p&gt;
+
+&lt;p&gt;But since there is no actual piece of code out yet, we’ll see what happens. Even if it was just a vaporware (which I guess highly unlikely), it is still a great idea that could be accomplished by anyone so far.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/11/22/_.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/22/_.html</guid>
         
-        <category>update</category>
+        <category>audio,</category>
+        
+        <category>soul,</category>
+        
+        <category>APL</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fluidsynth hack continued: Oboe driver</title>
+        <description>&lt;h2 id=&quot;updates-since-the-last-effort&quot;&gt;Updates since the last effort&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/atsushieno/fluidsynth-20x-for-android-4j6b&quot;&gt;It was two weeks ago&lt;/a&gt; that I finally got a practically working fluidsynth port with OpenSLES driver support. It was after big restructuring on the build system (building glib is a complicated task, and my build setup was messed due to Android NDK evolution). And by the time I got back successful builds there is already a new “better” audio driver Oboe (which is modern and ready for low latency than before).&lt;/p&gt;
+
+&lt;p&gt;And here you are, the Oboe driver is done: https://github.com/FluidSynth/fluidsynth/pull/464&lt;/p&gt;
+
+&lt;p&gt;This post is a handful of followups on the new Oboe driver implementation. There were many traps that drugged me on the ground…&lt;/p&gt;
+
+&lt;h2 id=&quot;mixing-c-and-c&quot;&gt;Mixing C++ and C&lt;/h2&gt;
+
+&lt;p&gt;If you are not familiar with CMake, like me, you’d find it problematic on finding the right way to not let CMake ignore c++ sources. You need &lt;code class=&quot;highlighter-rouge&quot;&gt;CXX&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;add_library&lt;/code&gt; function call explicitly, which takes a list of languages to use for compilation. CMake silently ignores your &lt;code class=&quot;highlighter-rouge&quot;&gt;*.cxx&lt;/code&gt; files, even if you clearly specify them in the source list.&lt;/p&gt;
+
+&lt;h2 id=&quot;historical-oboe-needs-android-ndk-r17-while-cerbero-specified-r16&quot;&gt;(historical) Oboe needs Android NDK r17, while Cerbero specified r16&lt;/h2&gt;
+
+&lt;p&gt;It is now only a past issue, but Cerbero &lt;code class=&quot;highlighter-rouge&quot;&gt;android.config&lt;/code&gt; specified Android NDK r16 explicitly. It was upgraded to r18 about 5 days ago.&lt;/p&gt;
+
+&lt;p&gt;NDK r16 lacks some required constant definition in AAudio API, which results in Oboe build failure. Therefore it is mandatory to use NDK r17 or later anyways.&lt;/p&gt;
+
+&lt;p&gt;I ended up to hack around Cerbero sources (again!) - this time it was trivial and that particular AAudio issue was resolved. But then another problem showed up…&lt;/p&gt;
+
+&lt;h2 id=&quot;gnustl-and-libc&quot;&gt;gnustl and libc++&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/android-ndk/ndk/wiki/Changelog-r17&quot;&gt;Since Android NDK r17&lt;/a&gt;, it’s moving away from gnustl and started using libc++ in clang. And with r18 gcc and co. are totally gone, meaning that there is no gnustl anymore.&lt;/p&gt;
+
+&lt;p&gt;I have been using Cerbero build system to get a working glib build with all the dependencies. Unfortunately, their build script still specifies android-16 (JellyBean) in &lt;code class=&quot;highlighter-rouge&quot;&gt;config/cross-android-*.cbc&lt;/code&gt;, and that triggered some problem. Let’s see NDK r17 release notes…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;libc++ is now the default STL for CMake and standalone toolchains. If you manually selected a different STL, we strongly encourage you to move to libc++. Note that ndk-build still defaults to no STL. For more details, see this blog post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;also…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The platform static libraries (libc.a, libm.a, etc.) have been updated.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;All NDK platforms now contain a modern version of these static libraries. Previously they were all Gingerbread (perhaps even older) or Lollipop.&lt;/li&gt;
+    &lt;li&gt;Prior NDKs could not use the static libraries with a modern NDK API level because of symbol collisions between libc.a and libandroid_support. This has been solved by removing libandroid_support for modern API levels. A side effect of this is that you must now target at least android-21 to use the static libraries, but these binaries will still work on older devices.”&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What makes things complicated is Cerbero android build which in general (namely &lt;code class=&quot;highlighter-rouge&quot;&gt;android/external/cerbero/packages/base-system-1.0.package&lt;/code&gt;) specifies ‘gnustl’ as part of the dependencies. gnustl is the standard C++ STL implementation library from GCC. See the first quote from NDK r17 release notes. They now have switched to libc++ and “strongly encourage” to move to libc++…&lt;/p&gt;
+
+&lt;p&gt;What happens if we mix uses of both? Some “unresolved reference” errors due to lack of either at linking.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, gnustl is widely used among many recipes and that should be handled by whoever is involved in Cerbero well (which is hopefully not very complicated).&lt;/p&gt;
+
+&lt;h2 id=&quot;solution-two-shared-libraries&quot;&gt;solution: two shared libraries&lt;/h2&gt;
+
+&lt;p&gt;Compared to the problem above, it is much easier to deal with, but another minor problem with Oboe was that it requires C++ build support. And that slightly messed up existing &lt;code class=&quot;highlighter-rouge&quot;&gt;CMakeLists.txt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To sort out those issues, I ended up to build a C-based oboe shared library &lt;code class=&quot;highlighter-rouge&quot;&gt;liboboe-c.so&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;libfluidsynth.so&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;liboboe-c.so: based on C++, links libc++&lt;/li&gt;
+  &lt;li&gt;libfluidsynth.so: based on C, links gnustl&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While I had been trying to get this working, there were some new commits in Cerbero and it had moved to NDK r18. But since gnustl is still in use, the symbol expectation mismatch still happens. I decided to keep this &lt;code class=&quot;highlighter-rouge&quot;&gt;liboboe-c.so&lt;/code&gt; until it can go totally unnecessary…&lt;/p&gt;
+
+&lt;p&gt;(And in the future when Android NDK r19 lands, it will also migrate from gold linker to lld, which could bring in other kinds of problem.)&lt;/p&gt;
+
+&lt;p&gt;(I might add more lines later, but so far I’d publish this first to make it visible on what I’ve been doing regarding them.)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/11/15/_.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/15/_.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fluidsynth 2.0.x for Android</title>
+        <description>&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;My fluidsynth Android port is live again, caught up with the latest Fluidsynth development (2.0.x).&lt;/li&gt;
+  &lt;li&gt;There is Java version of fluidsynth based on JNA.&lt;/li&gt;
+  &lt;li&gt;There is native asset loader now.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recap-from-the-last-post&quot;&gt;Recap from the last post&lt;/h2&gt;
+
+&lt;p&gt;Back in March, I &lt;a href=&quot;https://dev.to/atsushieno/fluidsynth-for-android--269i&quot;&gt;wrote a post&lt;/a&gt; on my Fluidsynth port to Android. Since then I spent some time or have been doing busy on other stuff (such as the latest &lt;a href=&quot;https://sangorrin.blogspot.com/2018/10/techbookfest-5.html&quot;&gt;TechBookFest5&lt;/a&gt; as the management team). But now that I’m not employed and have a lot more flexible time, I could resume my Fluidsynth port as well as many other music related software I had been working on. Anyhow…&lt;/p&gt;
+
+&lt;p&gt;To recap the latest state, I had &lt;a href=&quot;https://github.com/atsushieno/fluidsynth&quot;&gt;an Android port of fluidsynth&lt;/a&gt;, using &lt;a href=&quot;https://github.com/atsushieno/cerbero/tree/add-fluidsynth&quot;&gt;a fork of Cerbero&lt;/a&gt;, organized by my own module called &lt;a href=&quot;https://github.com/atsushieno/android-fluidsynth/&quot;&gt;android-fluidsynth&lt;/a&gt;. The build is complicated so that almost no one could use my outcome, and the original Fluidsynth had &lt;a href=&quot;https://github.com/Fluidsynth/fluidsynth&quot;&gt;moved to github&lt;/a&gt; with evolving changes e.g. migration to CMake build system. The CMake build system on Cerbero didn’t work nicely for Android.&lt;/p&gt;
+
+&lt;h2 id=&quot;resurrection-and-restructuring&quot;&gt;Resurrection and restructuring&lt;/h2&gt;
+
+&lt;p&gt;To make things worse, my android-fluidsynth build got broken when Google updated Android NDK to whichever version I don’t even remember - I had to manage Android NDK support in my Cerbero fork tree, and it’s been somewhat annoying. And NDK had various changes that make updates messy - aarch64 support, switch to unified headers (that means, file lookup paths change), and the default toolchains switch to Clang (and gcc getting obsoleted).&lt;/p&gt;
+
+&lt;p&gt;So, I began with refactoring the entire build dependencies. This was what I had in the beginning:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;atsushieno/fluidsynth-midi-service
+  atsushieno/android-fluidsynth (submodule)
+    atsushieno/cerbero (submodule)
+      atsushieno/fluidsynth (git checkout)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;My cerbero changes were for 1) NDK lookup changes, and 2) additional fluidsynth build recipe. I decided to remove fluidsynth build from there. That means, cerbero still builds glib (still required as a dependency) but I could just use the outcome and reference it from another CMake-based fluidsynth build (which is the current build system).&lt;/p&gt;
+
+&lt;p&gt;(I could even package those native binaries for glib, but now it is just to checkout and run cerbero build, which is maintained by their own team, which is simple enough for me.)&lt;/p&gt;
+
+&lt;p&gt;To align with that, I ended up to create another fluidsynth fork which is based on the latest original tree (Fluidsynth/fluidsynth on github) and ported my opensles additions (which needed some additional changes, but that’s not important here).&lt;/p&gt;
+
+&lt;p&gt;Along with this way, I could significantly reduced my dependency tree:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;atsushieno/fluidsynth-midi-service
+  atsyshieno/fluidsynth-fork (new, submodule)
+    GStreamer/cerbero (on-the-fly checkout at build time. Not on github)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;… and build it again(!)&lt;/p&gt;
+
+&lt;p&gt;Once I could submit a PR to the original Fluidsynth repo and got accepted, then the dependencies will look even simpler, but let’s think about it later.&lt;/p&gt;
+
+&lt;h2 id=&quot;kotlin-based-application&quot;&gt;Kotlin based application&lt;/h2&gt;
+
+&lt;p&gt;In the earlier days, I had been using Xamarin.Android as the primary app development framework for this fluidsynth port. However after I quit the development team, it became impossible to keep using the IDE on Linux. I still continue the development, but it became quite tough without IDE.&lt;/p&gt;
+
+&lt;p&gt;After many thoughts I ended up to start &lt;a href=&quot;https://github.com/atsushieno/fluidsynth-midi-service-j&quot;&gt;porting part of my C# app to Kotlin&lt;/a&gt;, using &lt;a href=&quot;https://github.com/java-native-access/jna&quot;&gt;JNA&lt;/a&gt; for my &lt;a href=&quot;https://github.com/atsushieno/nfluidsynth&quot;&gt;NFluidsynth&lt;/a&gt; replacement. The actual API binding is almost automatically generated using &lt;a href=&quot;https://github.com/nativelibs4java/JNAerator&quot;&gt;JNAerator&lt;/a&gt;. Since I didn’t want to mess with JNI, it was a big help to me. (I was a &lt;a href=&quot;https://github.com/nativelibs4java/BridJ&quot;&gt;BridJ&lt;/a&gt; contributor in the past, but now JNA looks easier to depend on.)&lt;/p&gt;
+
+&lt;p&gt;The ported app is far from a feature parity port, but at least it is enough to dogfood the fluidsynth Android port. In the end there will be fully functional MidiDeviceService implementation.&lt;/p&gt;
+
+&lt;h2 id=&quot;custom-soundfont-loader-for-android-assets&quot;&gt;Custom SoundFont loader for Android Assets&lt;/h2&gt;
+
+&lt;p&gt;One of the big API changes in Fluidsynth 2.0 was a completely rewritten custom SoundFont loader. In Fluidsynth 1.x we had to completely implement SF loader that does not only provide custom stream processor but also had to build the entire SoundFont structure, which makes it almost impossible to customize. Fluidsynth 2.0 offers a new way to provide a set of custom “stream callbacks” (for open/read/seek/tell/close) that lets us implement our own stream loader.&lt;/p&gt;
+
+&lt;p&gt;My previous port had some changes to provide custom stream loader which had exactly the same purpose, so I could totally remove those changes. Instead, now I (kind of) have to provide custom SF loader functionality for Android Assets that aligns with the new way.&lt;/p&gt;
+
+&lt;p&gt;There are two options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;implement custom callbacks in native (as in NDK manner) API.&lt;/li&gt;
+  &lt;li&gt;implement callbacks in the wrapper languages (C# for Xamarin.Android, Java for ordinal Android developers).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What makes the former (native API approeach) annoying is that the NDK Assets API requires &lt;code class=&quot;highlighter-rouge&quot;&gt;JNIEnv&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;jobject&lt;/code&gt; to acquire &lt;code class=&quot;highlighter-rouge&quot;&gt;AAssetManager&lt;/code&gt;. It was especially annoying for my new Kotlin-based app. I ended up to add &lt;code class=&quot;highlighter-rouge&quot;&gt;Java_fluidsynth_androidextensions_NativeHandler_setAssetManagerContext()&lt;/code&gt; function in the Android port. (It is nasty especially because any Java code that tries to use this API needs to have &lt;code class=&quot;highlighter-rouge&quot;&gt;NativeHelper&lt;/code&gt; class in &lt;code class=&quot;highlighter-rouge&quot;&gt;fluidsynth.androidextensions&lt;/code&gt; package, that I offer in my Kotlin app. I even renamed my Kotlin app package from &lt;code class=&quot;highlighter-rouge&quot;&gt;name.atsushieno.fluidsynth&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;fluidsynth&lt;/code&gt; to make it less nasty…)&lt;/p&gt;
+
+&lt;p&gt;The second approach (to write callbacks in wrapper languages) looks viable, but it needs some special care about GlobalRefs for the Java objects that provide those callback functionality - whenever GC moves your method references, the Asset SF loader crashes! I haven’t resolved that issue with my JNAerated API yet (C# version works as I made it “pinned” with &lt;code class=&quot;highlighter-rouge&quot;&gt;GCHandle&lt;/code&gt;). Native interop is a wild where you’re killed without sufficient crash information or chance to debug…&lt;/p&gt;
+
+&lt;h2 id=&quot;building-a-debuggable-libfluidsynthso&quot;&gt;Building a debuggable libfluidsynth.so&lt;/h2&gt;
+
+&lt;p&gt;Even after I got a “successful” &lt;code class=&quot;highlighter-rouge&quot;&gt;libfluidsynth.so&lt;/code&gt; builds, it never worked successfully. The longstanting problem was &lt;a href=&quot;https://github.com/atsushieno/fluidsynth-midi-service-j/issues/2&quot;&gt;an unexpected SIGILL&lt;/a&gt;. This issue was even registered at luckier state than at first, as it has a debuggable binary(!)&lt;/p&gt;
+
+&lt;p&gt;There had been wide variety of chances that &lt;code class=&quot;highlighter-rouge&quot;&gt;libfluidsynth.so&lt;/code&gt; was built without debug symbols. For example, you have to…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;explicitly specify debugging options such as &lt;code class=&quot;highlighter-rouge&quot;&gt;-Denable-debug=on&lt;/code&gt; and give additional &lt;code class=&quot;highlighter-rouge&quot;&gt;-fsanitize=undefined&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-fsanitize-trap=undefined&lt;/code&gt; flags at CMake,&lt;/li&gt;
+  &lt;li&gt;make sure to pass &lt;code class=&quot;highlighter-rouge&quot;&gt;-g&lt;/code&gt; or those &lt;code class=&quot;highlighter-rouge&quot;&gt;-fsanitize=undefined&lt;/code&gt; etc. to gcc execution (for standalone toolchain uses), or&lt;/li&gt;
+  &lt;li&gt;specify &lt;code class=&quot;highlighter-rouge&quot;&gt;NDK_DEBUG&lt;/code&gt; and make sure to kill &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd-strip&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;ndk-build&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After those struggles, I could finally get lldb working with my &lt;code class=&quot;highlighter-rouge&quot;&gt;libfluidsynth.so&lt;/code&gt;. It was a long journey.&lt;/p&gt;
+
+&lt;p&gt;I ended up to write a lengthy article about these kind of tricks for &lt;a href=&quot;https://techbooster.booth.pm/items/1046485&quot;&gt;our indie tech book&lt;/a&gt; for that TechBookFest5 (in Japanese) from this experience…&lt;/p&gt;
+
+&lt;h2 id=&quot;fighting-against-sigill&quot;&gt;Fighting against SIGILL&lt;/h2&gt;
+
+&lt;p&gt;The SIGILL issue I mentioned at the top of the previous section actually took a while… the debugger did not give much information about “why” (while it gives “where” which is still informative). The relevant function is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;static int chunkid(unsigned int id)
+{
+    unsigned int i;
+    const unsigned int *p;
+
+    p = (const unsigned int *)&amp;amp;idlist;
+
+    for(i = 0; i &amp;lt; sizeof(idlist) / sizeof(int); i++, p += 1)
+    {
+        if(*p == id)
+        {
+            return (i + 1);
+        }
+    }
+
+    return UNKN_ID;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It was weird especially because &lt;a href=&quot;https://github.com/FluidSynth/fluidsynth/blob/da6a2e7a91820bf97f89d3bcdb15b76e94e90bc2/src/sfloader/fluid_sffile.c#L494&quot;&gt;the problematic code&lt;/a&gt; was working fine in the past.&lt;/p&gt;
+
+&lt;p&gt;Actually, it was problematic. This is what clang reports:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/sources/fluidsynth-midi-service-j/external/fluidsynth/src/sfloader/fluid_sffile.c:494:9: warning: 
+      cast from 'const char (*)[117]' to 'const unsigned int *' increases
+      required alignment from 1 to 4 [-Wcast-align]
+    p = (const unsigned int *)&amp;amp;idlist;
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you google the part of the message “increases required alignment from “ then you’ll find that it could indeed result in undefined behavior such as SIGILL.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/atsushieno/fluidsynth-fork/commit/0239d37&quot;&gt;An unsophisticated workaround&lt;/a&gt; fixed the issue.&lt;/p&gt;
+
+&lt;p&gt;It is possible that the latest NDK changes from gcc to clang or possible compiler option changes in Fluidsynth build (in CMakeLists.txt) triggered the breakage, but I have no precise idea.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixing-audio-glitches&quot;&gt;Fixing audio glitches&lt;/h2&gt;
+
+&lt;p&gt;Even at the previous working state with old Fluidsynth port, the audio playback was “glitchy”. There was always noise inbetween, which was like it had some blank between synthesized samples.&lt;/p&gt;
+
+&lt;p&gt;There was also annoying warnings that OpenSLES spewed onto device logs saying that there was insufficient playback buffer, meaning that there were too much synthesized buffers to enque, before consuming them. It looked like I was enqueuing too much.&lt;/p&gt;
+
+&lt;p&gt;Before going forward, I should explain a bit about the buffering internals. There are two approaches to enqueue synthesized audio buffers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run an isolated audio loop. Get synthesized buffers and enqueue them while it’s alive.&lt;/li&gt;
+  &lt;li&gt;Register OpenSLES callback. Get synthesized buffers and enqueue them within the callback.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the earlier codebase, I had a hacky workaround to “adjust” the latency to calculate exact buffering time, which often adjusts timing with synchronous usleep() calls. It still made sense when it’s running an isolated audio run thread (the former model), but only if the buffering was at “earlier than the expected schedule”. And it didn’t make sense to try to adjust latency along with OpenSLES callback.&lt;/p&gt;
+
+&lt;p&gt;And to make investigation complicated, it took a while for me to find that the buffering option switching by settings API didn’t work as expected (due to bogus default value retrieval in my own code). I was also confused by two different “callbacks”, one for OpenSLES and the other for Fluidsynth. After all, precise understanding of code and code cleanup to reduce confusion led me to &lt;a href=&quot;https://github.com/FluidSynth/fluidsynth/commit/9a4c265&quot;&gt;the right solution&lt;/a&gt;…&lt;/p&gt;
+
+&lt;p&gt;After fixing this, all those buffering related issues are gone and the port became really usable. &lt;a href=&quot;https://github.com/atsushieno/fluidsynth-midi-service-j/blob/dac3149/app/src/main/java/name/atsushieno/fluidsynthmidideviceservicej/FluidsynthMidiReceiver.kt#L29&quot;&gt;It still needs some settings&lt;/a&gt; to get working in good state, but I’m quite happy with the outcome.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-step&quot;&gt;Next step&lt;/h2&gt;
+
+&lt;p&gt;Android audio situation keeps moving forward. Google had introduced new &lt;a href=&quot;https://developer.android.com/ndk/guides/audio/aaudio/aaudio&quot;&gt;AAudio API&lt;/a&gt; since Android O (API Level 26) which brings chance for lower latency by handful of means (direct buffers, high priority audio callback, low latency mode specification in the API). Google first stated that AAudio will be backported to earlier Androids, but what realized instead was a new audio API called &lt;a href=&quot;https://github.com/google/oboe&quot;&gt;Oboe&lt;/a&gt; that provides an unified API which switches two backend implementations (AAudio and OpenSLES).&lt;/p&gt;
+
+&lt;p&gt;Oboe was at preview state when I wrote the previous post (or, it didn’t even exist when I started porting) but now that Oboe is officially stable, it makes more sense to support it instead of OpenSLES. It is even fair to say that supporting OpenSLES became totally redundant… therefore, the next step is to support Oboe.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/10/31/_.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/10/31/_.html</guid>
+        
+        <category>android,</category>
+        
+        <category>midi,</category>
+        
+        <category>audio,</category>
+        
+        <category>fluidsynth</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>managed-midi updates</title>
+        <description>&lt;p&gt;Back in January, I wrote an introduction &lt;a href=&quot;https://dev.to/atsushieno/managed-midi-the-truly-cross-platform-net-midi-api-56hk&quot;&gt;blog post&lt;/a&gt; about &lt;a href=&quot;https://github.com/atsushieno/managed-midi&quot;&gt;managed-midi&lt;/a&gt;. It’s been 4 months since then, and there are couple of updates, so it’s nice to sum them up.&lt;/p&gt;
+
+&lt;h3 id=&quot;midi-input-supported&quot;&gt;MIDI input supported&lt;/h3&gt;
+
+&lt;p&gt;I have a few MIDI input devices now, especially Seaboard Block is cool (it’s quite useless for my actual use though :p).&lt;/p&gt;
+
+&lt;p&gt;Maybe you think I’m just showing off my cool toy, but it’s slightly more than that. Seaboard Block is based on BLE MIDI, which used to be supported only on iOS. Android 6.0 supported BLE MIDI as part of its Android MIDI API too. But Linux had no chance to use it until fairly recent &lt;a href=&quot;https://blog.felipetonello.com/2017/01/13/midi-over-bluetooth-low-energy-on-linux-finally-accepted/&quot;&gt;Bluez and Linux kernel got support for that&lt;/a&gt;. I’m on Ubuntu 17.10, so I also needed to switch to &lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/bluez/+bug/1713017&quot;&gt;some patched build&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, I got some reason to work on MIDI input support in managed-midi and it’s done there. I also have M-AUDIO KeyStation Mini 32, but those two devices give totally different input messages… what Seaboard brings in is &lt;a href=&quot;http://expressiveness.org/2015/04/24/midi-specifications-for-multidimensional-polyphonic-expression-mpe&quot;&gt;MPE&lt;/a&gt; - for each keypress it sends pitchbend, PAf etc. accordingly to the specification, which is a lot of information (like accelerometer multi-axes inputs). It will be fun once I can think of apps and support nicer handling of those MPE messages.&lt;/p&gt;
+
+&lt;h3 id=&quot;netstandard2-based-nuget-packaging&quot;&gt;netstandard2 based NuGet packaging&lt;/h3&gt;
+
+&lt;p&gt;I don’t care much about nuget packaging, but it is of some goodness to spread use of this library (which, well, again, I don’t care…). As explained in the &lt;a href=&quot;https://dev.to/atsushieno/managed-midi-the-truly-cross-platform-net-midi-api-56hk&quot;&gt;previous post&lt;/a&gt;, Xamarin.Mac Full project is blocked and it’s unchanged. Probably few people cares, but I do care - Xamarin.Mac full is the only profile that I can get Xwt working, and therefore my xwt-based &lt;a href=&quot;https://github.com/atsushieno/xmdsp&quot;&gt;xmdsp&lt;/a&gt; working) too.&lt;/p&gt;
+
+&lt;p&gt;Anyhow Xamarin, which brings the primary reason for me to “package” managed-midi, has migrated to .NET Standard 2.0 world from PCL-based world. So I moved forward too.&lt;/p&gt;
+
+&lt;p&gt;There should be .NET Core version of this library too (unlike the netstandard2.0 library, it will contain ALSA support etc.), hopefully in the near future.&lt;/p&gt;
+
+&lt;h3 id=&quot;precise-time-controller&quot;&gt;Precise time controller&lt;/h3&gt;
+
+&lt;p&gt;managed-midi used to be a dumb, simple MIDI player that never dealt with latency. It was somehow significant and not ignorable, and it was &lt;a href=&quot;https://github.com/atsushieno/managed-midi/issues/14&quot;&gt;reported a while ago&lt;/a&gt;. It’s been a big concern for me too.&lt;/p&gt;
+
+&lt;p&gt;managed-midi comes with a timer class called MidiTimeManager. Usually we use the default timer, which waits for the specified time span (simple as Task.Delay()), while we can alternatively use virtual time manager. It is just like TestScheduler in Rx.NET. You don’t want to wait forever when running unit tests.&lt;/p&gt;
+
+&lt;p&gt;So, technically timers can do more than simple and stupid wait. And any MIDI libraries would be dealing with that. I was lazy to actually implement it until very recently.&lt;/p&gt;
+
+&lt;p&gt;While it is still impossible to test this improvements (unless I actually play some  songs and measure the actual play time within the unit tests…), I use my xmdsp MIDI player to examine the latest accuracy. I used to author quite complicated song files (either copies or original songs) that I use for dogfooding.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next&lt;/h3&gt;
+
+&lt;p&gt;I have no idea TBH. My target is shifting to either raw audio based stuff (such as android-fluidsynth) and some MIDI composition environment. But since managed-midi is foundation for all my existing apps, it will keep going.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/05/31/managed-midi-updates.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/05/31/managed-midi-updates.html</guid>
+        
+        <category>MIDI</category>
+        
+        <category>mono</category>
+        
+        <category>xamarin</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>TechBookFest: the most passionate book authors sell their indie tech books in Japan</title>
+        <description>&lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h2&gt;
+
+&lt;p&gt;One of the big events I have been involved in Japan is “tech book festival” (技術書典). If you have ever heard of Comic Market in Japan, you’d find it similar but the targets are limited to technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://techbookfest.org/assets/tbf04/images/top.jpg&quot; alt=&quot;TechBookFest4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is one-day festival in Tokyo, held at Akiba, where all the geeky things get together. The visitors are mostly engineers. Last time it was in October, unfortunately on a Typhoon day, yet there were more than 3000 people. The next one will be on Apr. 22nd (tomorrow, at the time of writing).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/search?tbm=isch&amp;amp;q=%E6%8A%80%E8%A1%93%E6%9B%B8%E5%85%B8&amp;amp;tbs=imgo:1&quot;&gt;Google images about it and see what it is like&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In Japan, and I assume everywhere in the world, book publishers are shrinking and the industry is sunsetting. Programming and engineering books are not exceptional. But on the contrary, this festival is super active. How is it possible??&lt;/p&gt;
+
+&lt;p&gt;There are some factors that make it happen.&lt;/p&gt;
+
+&lt;p&gt;There are lots of “circles” (independent people or communities who write books), and they don’t have to be very popular. The first TechBookFest was done with 50-ish circles, and the next one will be 246 of those. Their topics are often quite niche, sometimes super niche. They write about whatever they are most interested and would like to write. Just like comic authors at the Comic Market, they don’t care much about sales - or they do care, but it’s not the top priority. They are not publisher companies and it’s not commercial driven.&lt;/p&gt;
+
+&lt;p&gt;And since it’s a face-to-face festival, it is not only about selling and buying books. They can have some (brief) talk about the technology the circles are writing, and get connected if they want. Similarly, we, the event organizers, lay out those similar circles close, so those neighbors can friend and chat. &lt;a href=&quot;https://atsushieno.github.io/xamaritans/&quot;&gt;I have my own circle&lt;/a&gt; about Xamarin too, and it is laid out right next to the circle for React Native next time. Flutter circle is on the counterpart too. (Actually we are already all friends.)&lt;/p&gt;
+
+&lt;h2 id=&quot;indie-books-get-popular&quot;&gt;Indie books get popular&lt;/h2&gt;
+
+&lt;p&gt;So you think they won’t sell at all? But there are 3000-ish visitors who are really interested in technology. What happens if there are such a lot of visitors browsing all the books at the market? Tenth of people, often hundreds, get interested in your books. It does not have to be sold for thousands. And the number is power. You are not alone to get attraction. There are &amp;gt;200 similar authors.&lt;/p&gt;
+
+&lt;p&gt;One of an interesting move that happened from the festival is that there are commercial book publishers (they can also join, sell and exhibit their publications at the festival) that are always looking for interesting books that are in commercial quality.&lt;/p&gt;
+
+&lt;p&gt;For example, at the second fest we have published two books about Xamarin (I tried to organize all into one book, but the authors were too passionate and wrote a lot of pages so that I had to split them).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/a/atsushieno/20170330/20170330191800.png&quot; alt=&quot;Essential Xamarin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I made &lt;a href=&quot;https://atsushieno.github.io/xamaritans/tbf2.html&quot;&gt;a minimalist promotion page&lt;/a&gt; for that (which is written in 199Xs markup technology), but it didn’t matter. Most of the promotions were done by the co-authors, and those 100 copies for each book were all sold out in 2.5 hours.&lt;/p&gt;
+
+&lt;p&gt;I have to say, our book was supreme as of the time of writing, written by top local developers, so some of the publishers got contacted with me if we were interested in publishing those books commercially. &lt;a href=&quot;https://www.amazon.co.jp//dp/B07539YT44/&quot;&gt;So we did&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The next book at the next festival (TBF3) didn’t sell that much, but it is still commercially published too. I’m not interested in managing everything for commercial publishing, so our next book won’t go commercial (I decided so). But I’m totally happy with indie publication. The commercial publisher takes 85% of the revenue for printed books, which is, well, absurd. We can publish by our own and what they do is only to make some edits and manage everything for Amazon/Kindle (I can do that too).&lt;/p&gt;
+
+&lt;p&gt;That’s a “successful” case, but you don’t even have to be “successful”. It’s not really the point when you are enjoying the festival. Your publications don’t have to be “great”. You can find inspiring books, even better if you are distributing your books of your own best interest, and find friends of the same interest.&lt;/p&gt;
+
+&lt;p&gt;For the upcoming one, I wrote a book by myself about my Music Macro Language (MML) to MIDI compiler, explaining how to use it, what the syntax is like, and tips for authoring each instrument part e.g. for bass, guitar, drums and keyboards. It is kind of normal content for MML authors, but MML itself is super niche, technology from 20th century. But after I announced it, I received a handful of (not many) requests for and interest in that book (“I want your MML book!”). They are “music to my ears” …!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-event-organizers&quot;&gt;The event organizers&lt;/h2&gt;
+
+&lt;p&gt;The entire festival is managed by two organizations: &lt;a href=&quot;https://techbooster.org/&quot;&gt;TechBooster&lt;/a&gt; is a software engineer community. The group has been publishing their indie books about Android/mobile and Web at the Comic Market, and now the festival by themselves too. &lt;a href=&quot;https://tatsu-zine.com/&quot;&gt;tatsu-zine.com&lt;/a&gt; (達人出版会) is an ebook publisher that has been for many years. I’m one of the members of the former and sometimes write about Android stuff.&lt;/p&gt;
+
+&lt;p&gt;After some experiences at the Comic Market, the leader started saying like “what if we organize our own festival for tech books?” …That sounded crazy (the leader always have some crazy ideas), but it somehow realized, and now it’s huge.&lt;/p&gt;
+
+&lt;p&gt;The core event organizer group is of a few people, and there are like ~50 staffs on the festival day. The group prepares all the websites, organizes the list of circles which visitors can bookmark them (and those at circles can see how many bookmarks they get), support them by several means, even offering online payment system will mobile apps. It’s super busy activity especially in the week before the day.&lt;/p&gt;
+
+&lt;p&gt;They are highly skilled developers and they often solves the problems technologically. For example, at TBF2 we had to make a lengthy line for waiting people to enter. At TBF3 we have a ticketing system and web page which notifies visitors the maximum ID number of the ticket (“People with ticket number XXX can enter”) and the stressful queue is gone.&lt;/p&gt;
+
+&lt;p&gt;(And of course the organizer asks for support in money too - each circle has to pay 7000JPY, but that’s of course not enough to run the entire event. That’s mostly the leader’s job.)&lt;/p&gt;
+
+&lt;h2 id=&quot;how-we-compose-books&quot;&gt;How we compose books&lt;/h2&gt;
+
+&lt;p&gt;TechBooster takes an interesting approach to compose books. When we are authoring them, our circle uses Github repos (in my private account) that are tailored for it. We use a specific markup language called &lt;a href=&quot;https://github.com/kmuto/review&quot;&gt;Re:VIEW&lt;/a&gt; as the text format, which is suited for book rendering to PDF (using latex) as well as HTML and EPUB. The group publishes an open repository for &lt;a href=&quot;https://github.com/TechBooster/ReVIEW-Template&quot;&gt;ReVIEW template&lt;/a&gt; as well as their open book on &lt;a href=&quot;https://github.com/TechBooster/C89-FirstStepReVIEW-v2&quot;&gt;How to write a book using Re:VIEW&lt;/a&gt;. There is even &lt;a href=&quot;https://hub.docker.com/r/vvakame/review/&quot;&gt;a Docker image for Re:VIEW&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On the editor side, we also have editor plugins support for Re:VIEW too. Atom has the first support, and I brought it to VSCode too. It supports preview, spell-check-like editorial helpers, and jump to sections.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/atsushieno/vscode-language-review/master/docs/images/sshot-preview.png&quot; alt=&quot;vscode-language-review&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Those drafts written in that simple markup language is easy to manage on Github - easy to get diffs, comment, create pull requests, integrating CI builds (for books!) and so on. It’s very modern way. It’s possible because almost all people in the group are software engineers and know how to git (we often have designers too).&lt;/p&gt;
+
+&lt;p&gt;The approach is then taken by many circles and thus helped growing the tech book community. Now I have my own circle for Xamarin too, and it’s also based on their project template.&lt;/p&gt;
+
+&lt;p&gt;After writing the first draft, we have some “review” process. Usually TechBooster does mutual review each other, but this time for my own circle there were not many authors, so I only asked some friends to do it for our drafts. They did awesome job, so I could make a lot of improvements.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-they-go-paper&quot;&gt;How they go paper&lt;/h2&gt;
+
+&lt;p&gt;I usually ask my friend painter to draw something I indicate (I pay for it), but this time (for the upcoming festival) I had to do it by myself, and it was hackily done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/a/atsushieno/20180419/20180419085023.png&quot; alt=&quot;mythbusters&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are many small printing companies which offers support for indie books (同人誌 in Japanese) and printings can be done by sending a book body PDF and a cover page PSD like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/a/atsushieno/20180419/20180419082929.png&quot; alt=&quot;cover page on the printing templates&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Those small companies are used to this kind of books because of the huge printing need at the Comic Market. There are similar domain-specific events (which we often call “[xyz-]only event” which deals only with [xyz]-stuff) and we TechBookFest are just one of those.&lt;/p&gt;
+
+&lt;p&gt;I get familiar with command line tools for manipulating PDFs like pdftk or ImageMagick, as well as dealing with coverpages templates using Krita (which is AFAIK the only tool that I can generate Photoshop *.psd files in CMYK on Linux desktop).&lt;/p&gt;
+
+&lt;p&gt;Some of the printing companies are “supported” by the event organizer, and they ship the printed books to the festival venue (for free for my case). The organizer group takes a lot of care about the circles’ activities.&lt;/p&gt;
+
+&lt;h2 id=&quot;im-writing-this-because&quot;&gt;I’m writing this because…&lt;/h2&gt;
+
+&lt;p&gt;Did you get interested? Basically it began with a small independent activity, grew up in public manner. How about your city? It was possible in Tokyo. There weren’t ComicCon before but now there are. How about book festival?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/04/21/tbf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/21/tbf.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fluidsynth for Android</title>
+        <description>&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;One of my unknown projects is Fluidsynth for Android. Since Android 6.0, it supports its own &lt;a href=&quot;https://developer.android.com/reference/android/media/midi/package-summary.html&quot;&gt;MIDI API&lt;/a&gt; as well as MIDI connection over BLE, so it became possible to connect MIDI devices to Android (if you would like to read my Japanese article, it’s part of the book &lt;a href=&quot;https://booth.pm/ja/items/126263&quot;&gt;“Android Masters!”&lt;/a&gt;). A technically-looking-cool feature is that it supports virtual MIDI device services so that anyone can implement a MIDI device service that can provide either MIDI input devices or MIDI output devices (or both) that other apps can connect as clients and play them just like other operating systems (Windows, Mac, Linux, iOS…).&lt;/p&gt;
+
+&lt;p&gt;It was designed to make it capable to run a software MIDI synthesizer through the service, so why not porting any of the existing bits? I thought so, and ended up to bring &lt;a href=&quot;http://www.fluidsynth.org/&quot;&gt;Fluidsynth&lt;/a&gt; into Android land.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-system&quot;&gt;Build system&lt;/h2&gt;
+
+&lt;p&gt;It was not simple; first of all, it does not make sense if there is no sound output. Fluidsynth is a software synthesizer that supports various audio APIs but not for Android. For Android, AudioTrack and &lt;a href=&quot;https://developer.android.com/ndk/guides/audio/opensl/index.html&quot;&gt;OpenSL ES&lt;/a&gt; are the available choices (when I was implementing it; there was no AAudio nor Oboe). Fluidsynth has its audio abstraction layer in their &lt;a href=&quot;https://github.com/FluidSynth/fluidsynth/tree/master/src/drivers&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;drivers&lt;/code&gt;&lt;/a&gt; source directory, so the only thing I had to do would be just to add another one there, right?&lt;/p&gt;
+
+&lt;p&gt;It was not that simple.&lt;/p&gt;
+
+&lt;p&gt;First, fluidsynth needed to be built with Android NDK toolchains. The original fluidsynth does not support Android builds. It would be particularly because of glib dependency; there is no intuitive way to build it for Android. glib is autotools-based and NDK did not play with it nicely.&lt;/p&gt;
+
+&lt;p&gt;… Wait. There are handful of glib-dependent apps and libraries that are known to work on Android. There is &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.dandroidmobile.xgimp&quot;&gt;Gimp&lt;/a&gt;, right? … but it runs on top of some weird X server. Next, how about GStreamer? It is &lt;a href=&quot;https://gstreamer.freedesktop.org/modules/gst-android.html&quot;&gt;known to support Android&lt;/a&gt;. How is it built? … that’s how I found &lt;a href=&quot;https://gstreamer.freedesktop.org/documentation/installing/building-from-source-using-cerbero.html&quot;&gt;Cerbero&lt;/a&gt; build system. It builds everything, including glib, in autotools manner, for Android as well as other targets.&lt;/p&gt;
+
+&lt;p&gt;All those dependency libraries can be built with “recipe”, which customize each library build. cerbero’s ultimate purpose would be to build GStreamer, but it can be anything if a recipe is added to the tree. And it was quite easy to add fluidsynth to the catalog.&lt;/p&gt;
+
+&lt;p&gt;I had to make some changes to support custom Android NDK setup, so my cerbero tree ended up to become an incompatible fork with the original tree, but I could build libfluidsynth.so for Android in the end.&lt;/p&gt;
+
+&lt;p&gt;Everything ended up to become this repo: https://github.com/atsushieno/android-fluidsynth/&lt;/p&gt;
+
+&lt;h2 id=&quot;androidopensles-implementation&quot;&gt;Android/OpenSLES implementation&lt;/h2&gt;
+
+&lt;p&gt;Second, I had to add opensles implementation. The source structure was nice enough and I could easily add &lt;code class=&quot;highlighter-rouge&quot;&gt;fluid_opensles.c&lt;/code&gt; to the tree. A minor problem was that there was almost only one &lt;a href=&quot;https://bitbucket.org/victorlazzarini/android-audiotest/src&quot;&gt;reference sample&lt;/a&gt; by Victor Lazzarini (&lt;a href=&quot;https://audioprograming.wordpress.com/category/android/&quot;&gt;his blog&lt;/a&gt; used to be publicly visible but now it’s private…). Even samples from an NDK book published in Japanese were almost the same as these samples.&lt;/p&gt;
+
+&lt;p&gt;One another thing I had to implement was to support custom stream loader for SoundFont files. Fluidsynth only offered filename-based loader which simply used local file I/O. So I had to extend fluidsynth itself to accept custom SF loader - the abstraction API and Android assets-based implementation.&lt;/p&gt;
+
+&lt;p&gt;Since my application is written in C#, I added those extensions to my P/Invoke wrappers (that’s only what I had to do - if I were using Java, I’d also have to add JNI entrypoints too…).&lt;/p&gt;
+
+&lt;h2 id=&quot;nfluidsynth-and-fluidsynthmidiservice&quot;&gt;NFluidsynth and FluidsynthMidiService&lt;/h2&gt;
+
+&lt;p&gt;Fluidsynth is cross-platform and works fine on Linux, which makes it easier for me to develop C# binding. Fluidsynth itself works as a virtual MIDI synthesizer, but to bridge from the system’s MIDI service entrypoints, we have to make fluidsynth functions callable and map from those entrypoints.&lt;/p&gt;
+
+&lt;p&gt;Therefore I made binding for  fluidsynth API using P/Invoke, released as https://github.com/atsushieno/nfluidsynth . And making it as a Xamarin.Android library is almost at zero cost. I only had to care about Android-specific extensions built only for Android.&lt;/p&gt;
+
+&lt;p&gt;At last, I created an  Android MIDI device service on top of this NFluidsynth.Android. To build such a service, we have to implement android.media.midi.MidiDeviceService. The entire API is super weird regarding inputs and outputs directions, but is not very difficult to implement.&lt;/p&gt;
+
+&lt;p&gt;During this attempts, I found that supporting Android MIDI API is almost no benefits. My managed-midi API is cross-platform, inspired by Web MIDI API, and it makes more sense to rather implement Android backend for it. Therefore I came up with two implementations; one for MidiDeviceService and another for my API.&lt;/p&gt;
+
+&lt;p&gt;They end up to become this repo: https://github.com/atsushieno/fluidsynth-midi-service&lt;/p&gt;
+
+&lt;h2 id=&quot;cmake-switches-and-android-fluidsynth-port&quot;&gt;CMake switches and android-fluidsynth port&lt;/h2&gt;
+
+&lt;p&gt;All those works were done in earlier years, so it is kind of weird that I write this post in 2018. I thought there would have been more software MIDI synthesizers for Android being released, but it did not seem to happen. What I got instead was, a handful of inquiries about my android-fluidsynth port. Since the entire build system is quite tricky, most of those who attempted to build failed hard (I feel sorry for that…).&lt;/p&gt;
+
+&lt;p&gt;One of the reasons it is kept undocumented was that the current state is (to me) very temporary - when I started this project, it was &lt;a href=&quot;https://sourceforge.net/projects/fluidsynth/&quot;&gt;hosted at sourceforge&lt;/a&gt; and it was based on autotools. Now it is &lt;a href=&quot;https://github.com/Fluidsynth/fluidsynth/&quot;&gt;hosted at Github&lt;/a&gt;  and the build system moved to CMake.&lt;/p&gt;
+
+&lt;p&gt;CMake is problematic right now - cerbero technically supports CMake, but it never seemed to support Android. What cerbero does there is to specify custom toolchains (CC, LD, etc.). And when you override some toolchains specified by cmake toolchains config (there is one in Android NDK) … it will detect inconsistent build specification and restarts the build again, without specified cmake options(!). That ends up to ignore my build options and the build fails. I still find no answer to solve this problem.&lt;/p&gt;
+
+&lt;p&gt;Graduating Cerbero is an option, and the option comes with a handful of choices - cerbero is in our build system because it resolves glib dependency problem. To eliminate cerbero, we have to find ways to resolve glib build issue.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/VolcanoMobile/fluidsynth-android&quot;&gt;VolcanoMobile/fluidsynth-android&lt;/a&gt; is an option; it removed all glib dependencies. This tree however became incompatible with the original tree, and I don’t feel comfortable with that. However, &lt;a href=&quot;https://github.com/degill/fluidsynth-android-opensles&quot;&gt;there is an effort&lt;/a&gt; to incorporate my OpenSLES implementation into that diverged version. I’m thinking to switch the basis for binary build artifacts to the ones from this tree.&lt;/p&gt;
+
+&lt;p&gt;Other choices are &lt;a href=&quot;https://github.com/google/cdep/&quot;&gt;Google cdep&lt;/a&gt; (I don’t like their basic idea of forking sources to make their own changes, which makes it merging origin unnecessarily messy), or incorporating &lt;a href=&quot;https://github.com/mono/eglib&quot;&gt;mono eglib&lt;/a&gt; instead of depending on glib. But so far I’m okay with the glib-less port above.&lt;/p&gt;
+
+&lt;p&gt;UPDATE (2018-03/12): eglib doesn’t provide gthreads, so it’s not an option.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-different-from-users-point-of-view&quot;&gt;What’s different from user’s point of view&lt;/h2&gt;
+
+&lt;p&gt;Fluidsynth automatically chooses the available options to build, for each platform. And opensles will be the default driver in my Android port.&lt;/p&gt;
+
+&lt;p&gt;There are some changes in SoundFont loader API and Android developers would like to use it (explained a bit, above). But other than that, there is no difference from the original source tree.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/03/10/fluidsynth-for-android.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/10/fluidsynth-for-android.html</guid>
+        
+        <category>android,</category>
+        
+        <category>audio,</category>
+        
+        <category>midi,</category>
+        
+        <category>xamarin</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>managed-midi: the truly cross platform .NET MIDI API</title>
+        <description>&lt;p&gt;I have a (surprisingly) long term project called &lt;a href=&quot;https://github.com/atsushieno/managed-midi&quot;&gt;“managed-midi”&lt;/a&gt; which is to offer cross platform C#/.NET MIDI access API. My “cross platform” here is not a marketing term; it targets Linux (ALSA), macOS (CoreMIDI) and Windows (WinMM), along with Android, iOS and UWP.&lt;/p&gt;
+
+&lt;p&gt;Actually, my managed-midi project is not about cross-platform goodness. It’s more of a structured music composition as well as messaging foundation. This is my primary motivation to develop this library.&lt;/p&gt;
+
+&lt;p&gt;But I’m going to discuss cross-platform part.&lt;/p&gt;
+
+&lt;p&gt;Wasn’t there any existing effort to provide Midi access API? The only project I can think of is &lt;a href=&quot;https://github.com/naudio/NAudio&quot;&gt;NAudio&lt;/a&gt;, which only cares about Windows. My primary desktop is GNOME on Linux, so it’s no-go. This is a typical huge problem in C# developer ecosystem that they only care about Windows.&lt;/p&gt;
+
+&lt;p&gt;Audio and music libraries are always like that, and few people have interest in cross-platform AND platform specific development. This development situation is similar to developing “bait-and-switch” PCLs, but like I generally don’t care about Mac and UWP, people don’t care about platforms they don’t use.&lt;/p&gt;
+
+&lt;p&gt;It is kind of ironic that MIDI features are categorized within very platform specific API groups, whereas MIDI itself is designed to be device independent.&lt;/p&gt;
+
+&lt;p&gt;The situation in C++ world is however changing. VST is now available on Linux too (I mean, the original library from Steinberg). We are seeing new-generation DAWs working on Linux (Renoise, Bitwig Studio, Tracktion WaveForm etc.).&lt;/p&gt;
+
+&lt;h2 id=&quot;wrapping-around-cross-platform-midi-api&quot;&gt;wrapping around cross-platform MIDI API&lt;/h2&gt;
+
+&lt;p&gt;Back in 2009 when I started launching this project among other small projects I had in mind (when this project didn’t even have a name and repo), I found &lt;a href=&quot;http://portmedia.sourceforge.net/&quot;&gt;PortMIDI&lt;/a&gt;, which is a cross-platform MIDI library that supports Windows, Mac and Linux, and I found it cool. I didn’t want to deal with platform-specific MIDI APIs, especially whatever I was not familiar with. Instead, I wrote a P/Invoke wrapper and OO-style API around it. I think my idea was good (I still kind of) - it is important to quickly get what we need, right? Those smart native developers dealt with the platform specifics, and I made use of the outcome.&lt;/p&gt;
+
+&lt;p&gt;That was the beginning of this library. I just wanted an SMF parser and a MIDI player that plays MIDI songs that I can compose using my music macro language compiler &lt;a href=&quot;https://github.com/atsushieno/mugene&quot;&gt;mugene&lt;/a&gt;. There wasn’t even appropriate abstraction.&lt;/p&gt;
+
+&lt;p&gt;It was however somewhat messy to get apps that are based on this library working. My primary .NET runtime has been always Mono, and I was primarily on Windows at that time. I couldn’t care much about Linux. Since portmidi is a pure third-pary library it always required binary shared libraries. portmidi was painful to me on Windows since it required JNI header files to build. And it has to be offered in 32bit for Mono (which supported only 32-bit x86 on Windows at that time) and 32bit binary didn’t work on .NET Framework for some reason. I was not familiar with them. I almost dumped the idea of offering binaries by myself.&lt;/p&gt;
+
+&lt;p&gt;A few years later, I found &lt;a href=&quot;https://github.com/thestk/rtmidi&quot;&gt;RtMidi&lt;/a&gt; and it was simpler. Unfortunately it was C++ only, so I wrote C wrapper for that (which I &lt;a href=&quot;https://github.com/thestk/rtmidi/commit/a5c375c7&quot;&gt;ended up to contribute&lt;/a&gt; to the project). It had the same issue as portmidi too but didn’t require JNI stuff, so building binaries was not so painful. Moreover, the development was active (at that moment).&lt;/p&gt;
+
+&lt;p&gt;There was still no proper abstraction, but it was implicitly done. The abstraction was done only as &lt;code class=&quot;highlighter-rouge&quot;&gt;MidiPlayer&lt;/code&gt; class (then I had &lt;code class=&quot;highlighter-rouge&quot;&gt;PortMidiPlayer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;RtMidiPlayer&lt;/code&gt;). I didn’t care much about that.&lt;/p&gt;
+
+&lt;h2 id=&quot;midi-api-abstraction&quot;&gt;MIDI API abstraction&lt;/h2&gt;
+
+&lt;p&gt;The primary reason I was developing managed-midi was to write usable MIDI application. So it does not have to be C#. There has been another effort to bring MIDI to cross-platform world - Web MIDI API. It is expected to be working on Web browsers, but right now it is only Chrome which supports it.&lt;/p&gt;
+
+&lt;p&gt;Web MIDI support in early days was not actually great for Linux software synthesizers (Chrome supported only Mac at first, and software synthesizers need special permission to be enabled), but its API structure was informative. It gave me the basic ideas on what we can/should provide in any platform and what not.&lt;/p&gt;
+
+&lt;p&gt;Therefore, I started refactoring the entire API structure. What’s good with Web MIDI API was that it is kind of OO-style and closer to C#, compared to former C libraries.&lt;/p&gt;
+
+&lt;p&gt;Thus, current API structure is like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IMidiAccess&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IMidiPortDetails&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IMidiPort&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IMidiInput&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IMidiOutput&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The MIDI messages are represented just as byte arrays. It is same as Web MIDI and RtMidi (portmidi was different, had its own message type).&lt;/p&gt;
+
+&lt;h2 id=&quot;implementing-direct-access-to-native-api&quot;&gt;Implementing direct access to native API&lt;/h2&gt;
+
+&lt;p&gt;Even with RtMidi, I was reluctant to build those libraries for Windows (I already switched my primary desktop to Linux) and Mac (I hate Apple’s attitude against Adobe Flash, dumped my iPhone and switched to Android because of that), especially since I had to provide my custom library that included C API.&lt;/p&gt;
+
+&lt;p&gt;After abstracting the API, I started to think that I could implement platform-specific implementation and switch the default implementation per platform so that I didn’t have to bother to build native binaries anymore.&lt;/p&gt;
+
+&lt;p&gt;Though the first problem I was faced was no P/Invoke availability in PCLs. I quickly thought that it’s not suitable for PCLs. But there is another tech trend in .NET: PCL with “bait and switch” technology that makes it possible to provide a common API with platform-specific implementation. Technically this problem seemed resolved.&lt;/p&gt;
+
+&lt;p&gt;The first native implementation target was Windows. Windows at this state means: Windows desktop and UWP (I don’t care about WinRT, there is no official MIDI API and those users are used to be limited their ability). As of that time, what I wanted was rather getting my visual MIDI player &lt;a href=&quot;https://github.com/atsushieno/xmdsp&quot;&gt;xmdsp&lt;/a&gt; seamlessly working on Windows and Mac as well as Linux, and it was on top of &lt;a href=&quot;https://github.com/mono/xwt&quot;&gt;xwt&lt;/a&gt; which is based on WPF and thus desktop .NET Framework. Therefore WinMM matters. WinMM was easy. UWP is more organized API and wrapping around it was easy, but since I don’t have any managed-midi apps it is totally untested.&lt;/p&gt;
+
+&lt;p&gt;CoreMidi was different. It did not even start with desktop. What I actually thought was to get managed-midi working on Android (and it was not even for Android MIDI API - it was for my &lt;a href=&quot;https://github.com/atsushieno/fluidsynth-midi-service/&quot;&gt;fluidsynth-midi-service&lt;/a&gt; project, but it’s going to be too long to discuss that here). Anyhow mobiles got in sight at that time. Android MIDI API is shitty with the class names, but wrapping around it was easy.&lt;/p&gt;
+
+&lt;p&gt;While I wrote CoreMidi implementation for iOS, I didn’t have any managed-midi apps that work on iOS, so I didn’t even try it. Even on Mac, I tried only once when Xamarin.Mac started working fine with Xwt with CoreMidi (there was complicated library resolution bug that I had to wait for fixes in 2017). API wise, CoreMidi was a bit more complicated than others due to their concept of endpoints.&lt;/p&gt;
+
+&lt;p&gt;And… finally ALSA. I didn’t want to work on ALSA because rtmidi just works, building rtmidi was always easy, and ALSA is complicated. But copying librtmidi.so everywhere is messy (like &lt;a href=&quot;https://github.com/atsushieno/managed-midi/issues/8&quot;&gt;this issue&lt;/a&gt;) and as long as I am dependent on rtmidi I could not resolve some weird &lt;a href=&quot;https://github.com/atsushieno/managed-midi/issues/1&quot;&gt;issues like this&lt;/a&gt;, so I ended up to learn about ALSA and implemented it as &lt;a href=&quot;https://github.com/atsushieno/alsa-sharp/&quot;&gt;alsa-sharp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;fundamental-problem-with-the-bait-and-switch-trick-in-net-standard&quot;&gt;Fundamental problem with the “bait and switch” trick in .NET Standard&lt;/h2&gt;
+
+&lt;p&gt;At this state, managed-midi lacks a lot of features like input support everywhere (surprisingly? I didn’t need it yet) and device connection state detector (which is part of Web MIDI API so it should be implemented too). I only cared about output (my primary goal is to get a MIDI player). Device detection is complicated on ALSA as it has to be done outside ALSA, and probably WinMM which doesn’t provide the feature too.&lt;/p&gt;
+
+&lt;p&gt;NuGet packaging is another bit problem - while I intended to build a cross-platform library, it does not take shape of “bait-and-switch” PCL or .NET Standard library. Here is why: Xamarin.Mac full profile requires its own &lt;code class=&quot;highlighter-rouge&quot;&gt;ProjectTypeGuids&lt;/code&gt;, which means it is basically different from .NET Framework desktop profile. They have to be different. And I cannot depend on Xamarin.Mac when I’m working on this library because I’m not on Mac (even if I had Mac, no one should be required to work on Mac anyways) and the entire desktop library cannot be Xamarin.Mac specific (see &lt;a href=&quot;https://medium.com/@donblas/xamarin-mac-and-netstandard2-708a06890302&quot;&gt;this post&lt;/a&gt; for the PCL/NuGet target moniker).&lt;/p&gt;
+
+&lt;p&gt;Therefore managed-midi has two different assemblies for the same netstandard moniker (net461). That makes it impossible to package one of either. Since there is no reason to prefer Xamarin.Mac specific assembly for net461, it is basically ignored.&lt;/p&gt;
+
+&lt;p&gt;This is something .NET Standard designers should resolve.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is an import from https://dev.to/atsushieno/managed-midi-the-truly-cross-platform-net-midi-api-56hk&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/01/10/managed-midi.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/10/managed-midi.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>First post to dev.to</title>
+        <description>&lt;p&gt;I haven’t blogged in English for a while (I do in Japanese) and that’s mostly because I was always wondering where to post. dev.to looks good enough to me. My posts can be very short or very long, up to my motivation and feelings.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is an import from https://dev.to/atsushieno/first-post-to-devto-pc4&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/01/10/first-post-to-dev-to.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/01/10/first-post-to-dev-to.html</guid>
+        
         
       </item>
     
