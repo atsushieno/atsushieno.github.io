@@ -1,5 +1,5 @@
 ---
-title: 'Fluidsynth for Android take 3: AMidi, SF3, Kotlin app, MidiReceivers'
+title: 'Fluidsynth for Android take 4: AMidi, SF3, Kotlin app, MidiReceivers'
 date: 2019-04-28 15:03:00 Z
 tags:
 - midi
