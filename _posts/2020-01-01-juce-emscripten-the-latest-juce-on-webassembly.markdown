@@ -15,7 +15,7 @@ New year beginning, with juicy news to the audio developers community!
 
 Today I'm introducing [**Dreamtonics/juce_emscripten**](https://github.com/Dreamtonics/juce_emscripten/), the latest JUCE fork development for the Web. It is developed for a virtual singer product called [Synthesizer V](synthesizerv.com/) by Dreamtonics, a small company in Tokyo. They have been developing their next generation of the product and today they have published a Web version of the preview release. (I am not the developer, just helping the effort a little bit there.)
 
-You can try it from here: https://web.synthesizerv.com/
+You can try it from here: [https://web.synthesizerv.com/](https://web.synthesizerv.com/)
 
 The most impressive thing is that they have been using [JUCE framework](juce.com/) and brought it up onto the Web using [Emscripten](https://emscripten.org/). It is actually based on the [former work by beschulz](https://github.com/beschulz/juce_emscripten) about 5 years ago, and Dreamtonics brought it to so featureful state that they can run their product which is entirely based on JUCE.
 
