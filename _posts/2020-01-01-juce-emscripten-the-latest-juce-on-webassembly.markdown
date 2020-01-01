@@ -39,7 +39,7 @@ $ ./emsdk activate latest
 Once emsdk is set up, then you need environment settings to make emscripten toolchains usable. Install once, set environment every time before you start hacking juce_emscripten:
 
 ```
-$ source ./emsdk_env.sh # これはemmake
+$ source ./emsdk_env.sh
 ```
 
 Now you can build it with `emmake` at `examples/DemoRunner/Builds/Emscripten` directory. (Note that there is already `Makefile` which is configured, and if you run `Projucer --resave DemoRunner.jucer` it will overwrite this working file with broken output!)
