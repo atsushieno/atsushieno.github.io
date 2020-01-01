@@ -9,7 +9,7 @@ tags:
 - synthesizer-v
 ---
 
-It iskind of English translation from my Japanese blog post, which is yet to be posted.
+It is kind of English translation from [my Japanese blog post](http://atsushieno.hatenablog.com/entry/2020/01/01/121050).
 
 New year beginning, with juicy news to the audio developers community!
 
