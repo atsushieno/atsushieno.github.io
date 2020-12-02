@@ -1,6 +1,9 @@
 ---
+title: Xamarin Android Fd2
+date: 2020-12-03 00:00:00 +09:00
 published: false
 ---
+
 ---
 title: "Xamarin.Android fast deployment v2について"
 type: "tech"
