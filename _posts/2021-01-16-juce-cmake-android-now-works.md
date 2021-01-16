@@ -1,7 +1,6 @@
 ---
-title: 'JUCE + CMake + Android, now works'
+title: JUCE + CMake + Android, now works
 date: 2021-01-16 19:00:00 +09:00
-published: true
 tags:
 - JUCE
 - Android
