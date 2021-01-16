@@ -10,7 +10,7 @@ tags:
 
 # JUCE + CMake + Android, now works
 
-(This is a translation from https://atsushieno.hatenablog.com/entry/2021/01/16/020602)
+(This is a translation from [my Japanese blog post](https://atsushieno.hatenablog.com/entry/2021/01/16/020602))
 
 JUCE6 supports CMake, but there is one missing platform: Android.
 
@@ -52,11 +52,11 @@ This section is a summary of what I found out to accomplish this mission. If you
 
 When you create a new project with C++ support in Android Studio, it will look like this image. **This is the state we should target to get closer**. There are a lot of files under `res`, so I've collapsed them.
 
-![project-android-studio.png]({{site.baseurl}}/_posts/project-android-studio.png)
+![project-android-studio.png](https://raw.githubusercontent.com/atsushieno/atsushieno.github.io/master/images/project-android-studio.png)
 
 On the other hand, JUCE's Android project looks like this. This is an incomplete list. Specifically, the C++ code is not shown here. It is because they stay outside of the top directory of `Builds/Android`.
 
-![project-projucer.png]({{site.baseurl}}/_posts/project-projucer.png)
+![project-projucer.png](https://raw.githubusercontent.com/atsushieno/atsushieno.github.io/master/images/project-projucer.png)
 
 There are handful of differences, but as you can see they are similar in general.
 
@@ -418,11 +418,11 @@ The application is almost complete already, but if you build and run the applica
 
 All JUCE modules are linked as PRIVATE, which is equivalent to `-fvisibility=hidden`. It seems due to ODR (one definition rule). The `juce_CreateApplication()` is compiled as part of the resulting library without being stripped, but it is hidden and cannot be found by `dlsym()`. JUCE will not start the JUCE application loop in such case, the bootstrapping process will then simply end without doing anything. This problem can be fixed with the following one liner patch.
 
-https://gist.github.com/atsushieno/7da120ef87826c9d8fdf8ad6542a16f6
+[https://gist.github.com/atsushieno/7da120ef87826c9d8fdf8ad6542a16f6](https://gist.github.com/atsushieno/7da120ef87826c9d8fdf8ad6542a16f6)
 
 All those changes, you can run JUCE applications built with CMake on Android.
 
-![sshot-template-project.png]({{site.baseurl}}/_posts/sshot-template-project.png)
+![sshot-template-project.png](https://raw.githubusercontent.com/atsushieno/atsushieno.github.io/master/images/sshot-template-project.png)
 
 ### Porting an existing JUCE plugin application.
 
@@ -432,7 +432,7 @@ https://github.com/atsushieno/aap-juce-witte-eq takes a plugin project witte/Eq 
 
 There are not so many OSS JUCE applications made with CMake yet, but I expect that there can be more applications that can be ported like this.
 
-![sshot-app-port.png]({{site.baseurl}}/_posts/sshot-app-port.png)
+![sshot-app-port.png](https://raw.githubusercontent.com/atsushieno/atsushieno.github.io/master/images/sshot-app-port.png)
 
 ## Summary
 
