@@ -1,6 +1,9 @@
 ---
+title: Juce Cmake Android Now Works
+date: 2021-01-16 00:00:00 +09:00
 published: false
 ---
+
 ---
 title: 'JUCE + CMake + Android, now works'
 date: 2021-01-16 19:00:00 +09:00
