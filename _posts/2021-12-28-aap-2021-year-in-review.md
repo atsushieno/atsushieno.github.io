@@ -1,6 +1,6 @@
 ---
 published: true
-title: AAP: 2021 year in review
+title: "AAP: 2021 year in review"
 date: 2021-12-28 22:30:00 +09:00
 tags:
 - AAP
