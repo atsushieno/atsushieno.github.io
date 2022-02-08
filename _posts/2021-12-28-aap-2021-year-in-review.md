@@ -63,7 +63,7 @@ While these features look pretty cool (it is awkward that I say so by myself, bu
 
 In February I set up a roadmap for AAP for this year.
 
-https://github.com/atsushieno/android-audio-plugin-framework/issues/71
+[https://github.com/atsushieno/android-audio-plugin-framework/issues/71](https://github.com/atsushieno/android-audio-plugin-framework/issues/71)
 
 Soon I switched to my primary hacking targets to Kotlin MIDI ecosystem and AAP was affected by it as shown in MIDI 2.0 support bits. I thought "ports should be of MIDI 2.0, not 1.0" (which kind of messed existing bits up) and I started working on it, putting aside those listed tasks. It is not bad, but those tasks were left unaccomplished.
 
