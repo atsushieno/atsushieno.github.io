@@ -45,7 +45,7 @@ The app, [kmmk](https://github.com/atsushieno/kmmk/), is from my another develop
 
 Since these AAP MidiDeviceServices are conformant to Android MIDI API, they can be listed on other apps:
 
-[AAP MIDI devices on Volcano Mobile MIDI sequencer](https://i.imgur.com/eceqJyv.png)
+![AAP MIDI devices on Volcano Mobile MIDI sequencer](https://i.imgur.com/eceqJyv.png)
 
 It is however not at very usable state right now; the audio outputs are glitchy for some reason yet. I had spent much time on another adventurous bits - MIDI 2.0. It was along with MIDI 2.0 support in that kmmk app, and I was exploring and wandering around some different approaches to support it, and things did not get fixed until I reached the current state. MIDI 2.0 support was once working in AAP MIDI devices, and currently it is not. I am on revisiting the entire stack, including the fundamental redesigning on ports and parameters (which also keeps me away from [GUI integration](https://github.com/atsushieno/android-audio-plugin-framework/issues/34)).
 
