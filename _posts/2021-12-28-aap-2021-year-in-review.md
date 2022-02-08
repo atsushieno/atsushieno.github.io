@@ -69,10 +69,10 @@ Soon I switched to my primary hacking targets to Kotlin MIDI ecosystem and AAP w
 
 In fact those tasks, for example, UI integration, would (or *should*) not be accomplished until  some other dependent tasks gets resolved. There are handful of issues around port design, namely:
 
-- https://github.com/atsushieno/android-audio-plugin-framework/issues/73
-- https://github.com/atsushieno/android-audio-plugin-framework/issues/79
-- https://github.com/atsushieno/android-audio-plugin-framework/issues/80
-- https://github.com/atsushieno/android-audio-plugin-framework/issues/44
+- [https://github.com/atsushieno/android-audio-plugin-framework/issues/73](https://github.com/atsushieno/android-audio-plugin-framework/issues/73)
+- [https://github.com/atsushieno/android-audio-plugin-framework/issues/79](https://github.com/atsushieno/android-audio-plugin-framework/issues/79)
+- [https://github.com/atsushieno/android-audio-plugin-framework/issues/80](https://github.com/atsushieno/android-audio-plugin-framework/issues/80)
+- [https://github.com/atsushieno/android-audio-plugin-framework/issues/44](https://github.com/atsushieno/android-audio-plugin-framework/issues/44)
 
 When I designed AAP in 2019 I was simply following the LV2 approach because it looked flexible. It is indeed, but it seems that the users faced problem on how to deal with parameters in good manner. Most of them are single float value and there are hundreds of parameters that we don't want to potentially deal with buffers and thus having one controller port with lv2:patch support is taking place. We should do it simpler in unified form.
 
