@@ -12,6 +12,6 @@ email: atsushieno (guess domains)
 description: Blog posts, mostly about software engineering and music tech, by Atsushi Eno.
 twitter_username: atsushieno
 github_username: atsushieno
-markdown: kramdown
+markdown: GFM
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
