@@ -273,9 +273,9 @@ The lengthy analysis and explanation is done. Let focus on the present issue. Wh
 
 As explained at Analysis Pt.1, if we use `pthread_create()` in C++ region, it seems impossible to associate it with `java.lang.Thread` and acquire and set appropriate ClassLoader. Then, instead of using `pthread_create()`, we could instantiate `java.lang.Thread`, pass a `Runnable` implementation with our own proxy (`AndroidInterfaceImplementer` implementation), and in the `invoke()` implementation we retrieve `pthread_t` ID using `pthread_self()` and continue with the user-defined `run()` implementation on the `juce::Thread` instance.
 
-Here is the patch: https://gist.github.com/atsushieno/8e176beca9d6fd4ea91a6953838195b6
+Here is the patch: https://gist.github.com/atsushieno/8e176beca9d6fd4ea91a6953838195b6 (ed. 2022/3/17: PR at https://github.com/juce-framework/JUCE/pull/1041)
 
-BUT, it was not sufficient. There is another issue in the existing Proxy that its ClassLoader is not fully aware of multiple dex-es, which was explained around the end of Pt.1. We have to somehow acquire the "right" ClassLoader. So here is another patch: https://gist.github.com/atsushieno/eff946b6daf8897eb01ec76068154c17
+BUT, it was not sufficient. There is another issue in the existing Proxy that its ClassLoader is not fully aware of multiple dex-es, which was explained around the end of Pt.1. We have to somehow acquire the "right" ClassLoader. So here is another patch: https://gist.github.com/atsushieno/eff946b6daf8897eb01ec76068154c17 (ed. 2022/3/17: PR at https://github.com/juce-framework/JUCE/pull/1040)
 
 It retrieves the ClassLoader from `com.rmsl.juce.Java` instance, which seems sufficient.  Though, this class is not available at `JNI_OnLoad()` whereas it calls `JNIClassBase::initialiseAllClasses()` (which needs the working ClassLoader), I had to move the call to `initialiseAllClasses()` to `Thread::initialiseJUCE()`. I believe it makes more sense.
 
