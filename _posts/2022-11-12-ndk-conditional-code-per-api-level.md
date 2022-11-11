@@ -13,7 +13,7 @@ tags:
 When we write some code using Android SDK API, we often write code like "we go for this code path on new Android  version X or later, and go the other way on the older versions..." It is as simple as:
 
 ```
-if (Build.VERSION.SDK_INT >= 30) { /* code for newer Androids */ )
+if (Build.VERSION.SDK_INT >= 30) { /* code for newer Androids */ }
 else { /* code for older Androids */ }
 ```
 
