@@ -8,7 +8,7 @@ tags:
 - C++
 ---
 
-(It is a blog post translated from my [Japanese version](https://zenn.dev/atsushieno/articles/bb2ba212d71148）.)
+(It is a blog post translated from my [Japanese version](https://zenn.dev/atsushieno/articles/bb2ba212d71148).)
 
 When we write some code using Android SDK API, we often write code like "we go for this code path on new Android  version X or later, and go the other way on the older versions..." It is as simple as:
 
