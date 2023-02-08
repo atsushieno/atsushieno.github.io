@@ -10,7 +10,7 @@ collections:
     output: true
 email: atsushieno (guess domains)
 description: Blog posts, mostly about software engineering and music tech, by Atsushi Eno.
-twitter_username: atsushieno
+mastodon_username: @atsushieno@g0v.social
 github_username: atsushieno
 markdown: GFM
 redcarpet:
