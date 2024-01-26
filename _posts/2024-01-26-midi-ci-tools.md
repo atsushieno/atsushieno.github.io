@@ -10,7 +10,7 @@ tags:
 
 # Understanding MIDI-CI tools
 
-These months I had been working on my latest project, [**ktmidi-ci-tool**](https://github.com/atsushieno/ktmidi/tree/main/ktmidi-ci-tool). I have written [another blog post](https://atsushieno.github.io/2024/01/26/ktmidi-ci-tool-released.md) on the development itself, but since MIDI-CI itself is quite unknown at this state, I thought we need some explanation on what MIDI-CI tools are for, what we can achieve with MIDI-CI tools, and how to use them. Hence, I will be explaining a lot of the specification and the tools with lots of words this time.
+These months I had been working on my latest project, [**ktmidi-ci-tool**](https://github.com/atsushieno/ktmidi/tree/main/ktmidi-ci-tool). I have written [another blog post](https://atsushieno.github.io/2024/01/26/ktmidi-ci-tool-released.html) on the development itself, but since MIDI-CI itself is quite unknown at this state, I thought we need some explanation on what MIDI-CI tools are for, what we can achieve with MIDI-CI tools, and how to use them. Hence, I will be explaining a lot of the specification and the tools with lots of words this time.
 
 ## evaluating MIDI-CI implementation interoperability
 
