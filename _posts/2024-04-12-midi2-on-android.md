@@ -1,4 +1,3 @@
-
 ---
 published: true
 title: "Building MIDI 2.0 Ecosystems on Android"
