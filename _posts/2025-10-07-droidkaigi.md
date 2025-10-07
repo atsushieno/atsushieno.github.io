@@ -1,7 +1,7 @@
 ---
 published: true
 title: "On 'Android Audio: Beyond Winning on It' at DroidKaigi 2025"
-date: 2025-10-7 21:00:00 +09:00
+date: 2025-10-07 21:00:00 +09:00
 tags:
 - Android
 - Audio
