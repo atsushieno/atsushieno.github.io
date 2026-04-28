@@ -93,13 +93,13 @@ There was no synth plugin ported to WebCLAP at the time of building it (and as o
 
 You can try the latest wasm build from here: https://atsushieno.github.io/uapmd/playground/latest/
 
-Support for WebCLAP was not actually straightforward. It requires such an architecture that splits audio processing and anything else into respective threads. It seemed like audio engine separation that I wanted to implement at some stage for isolating the entire plugin hosting process, but that wasn't. Separate audio engine only requires data sharing across processes, but separating the entire plugin host requires a lot more IPC work (still not implemented).
+Support for WebCLAP was not actually straightforward. It requires such an architecture that splits audio processing and anything else into respective process es, not just separate threads. It seemed like audio engine separation that I wanted to implement at some stage for isolating the entire plugin hosting process, but that wasn't. Separate audio engine only requires data sharing across processes, but separating the entire plugin host requires a lot more IPC work (still not implemented).
 
 I also had to make a change in our State API. CLAP requires the state API functions invoked on the *main* thread, but UAPMD cannot block the wasm main thread. To reconcile the situation, I had to make changes to our plugin client API (not the plugin API abstraction layer itself) to become asynchronous. The WebCLAP official sample host does not provide state features yet, so it is all my own experimental stuff, but it works for now.
 
 Another related improvements is that the audio graph API is now part of the realtime-safe part of the entire system. Until this version, UAPMD only provided simple linear connection of nodes so there was not much pressure on RT-safety requirement. But what happens when someone started implementing complicated audio graph - can we really require that? This question led me to the conclusion - I have to prove that anyway. That became part of the next release.
 
-## UAPMD v0.4
+## UAPMD v0.4: realistic AAP GUI integration
 
 Up until now, UAPMD is getting more features such as piano roll editor, audio graph, and audio warp editor. However, UAPMD is primarily a plugin host so far, and while I keep bringing in DAW-like features, they exist for providing some way to implement common plugin format features such as latency reporting (and thus compensation).
 
@@ -125,6 +125,8 @@ Another Android-specific issue (or maybe mobile-specific issue, depending on how
 
 But all those efforts are worth. With usable presets, dealing with AAP is a lot more of fun, even though we still cannot save the manipulation results.
 
+There are still some design thoughts that I am not fully decided yet: those resizable plugin UIs don't work well on Android yet. I rather made the host window resizable and made "plugin UI as the content" scrollable, so that those big plugin UI contents can be still shown on the mobiles (I assume mostly tablets as of now). If we simply make resizable window resizable and have content scale with the window, the content will become too small to manipulate. Even worse, we are based on touch inputs on mobiles. That might not fit the actual resizable UI that the plugin developers intend, but I think the current state is the most realistic option.
+
 In the next development cycle, I will have to bring in some ABI incompatibility in AAP and that's going to be a big deal. But once I get all those features working on UAPMD, hopefully I will be able to move forward to the first 1.0 release cycle. There are many parts that I want to "modernize" from the API to the samples, but things now look realistic than ever.
 
-
+In about a month I will be talking about these efforts in [my session at ADC Japan 2026](https://audio.dev/adc-japan-26/schedule/), and I wich I can make these missing bits done by then. Though I will also be busy visiting [KotlinConf](https://kotlinconf.com/) 2026, so I'm not very optimistic. I believe all these above are already fruitful.
